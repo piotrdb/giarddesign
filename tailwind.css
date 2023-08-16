@@ -1,4 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.search.active {
+  background-color: #111111;
+  color: rgb(229 231 235);
+}
+
+.search.active + .search-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-80%, 100%);
+}
+
+.offer.active {
+  background-color: #111111;
+  color: rgb(229 231 235);
+}
+
+.offer-list {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.offer.active + .offer-list {
+  transform: translate(-50%, 13%);
+  opacity: 1;
+  visibility: visible;
+  z-index: 0;
+}

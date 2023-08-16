@@ -39,24 +39,164 @@
   </head>
   <!-- ==== BODY ==== -->
   <body class="font-inter">
-    <section class="bg-white">
-      <nav class="text-almostblack py-2 px-4 flex justify-between items-center">
+    <section
+      class="bg-white flex justify-center items-center py-5 w-full fixed"
+    >
+      <nav
+        class="text-almostblack max-w-[1536px] w-full py-2 px-16 flex justify-between items-center"
+      >
         <div class="flex items-center">
-          <img src="public\giarddesign.svg" alt="Logo Strony" />
+          <a href="#">
+            <img
+              class="scale-125"
+              src="public\giarddesign.svg"
+              alt="Logo Strony"
+          /></a>
         </div>
-        <ul class="flex space-x-4">
-          <li><a href="#" class="hover:text-gray-300">Oferta</a></li>
-          <li><a href="#" class="hover:text-gray-300">O firmie</a></li>
-          <li><a href="#" class="hover:text-gray-300">Realizacje</a></li>
-          <li><a href="#" class="hover:text-gray-300">Kontakt</a></li>
+        <ul class="flex space-x-12 items-center">
           <li class="relative">
-            <a href="#" class="hover:text-gray-300">
-              <i class="fas fa-search"></i>
-            </a>
+            <p
+              class="offer px-6 py-3 rounded-full hover:text-gray-200 hover:bg-almostblack cursor-pointer"
+            >
+              Oferta
+            </p>
+            <ul
+              class="-z-[1] offer-list text-center flex flex-col justify-center pb-1 align-middle absolute left-1/2 translate-x-[-50%] translate-y-[-100%] w-[220px] scale-0 rounded-b-xl bg-white drop-shadow-2xl duration-500"
+            >
+              <li class="w-full hover:font-bold">
+                <a href="#" class="block w-full h-full px-5 py-2"
+                  >Aranżacja ogrodu</a
+                >
+              </li>
+              <li class="w-full hover:font-bold">
+                <a href="#" class="block w-full h-full px-5 py-2"
+                  >Tarasy i balkony</a
+                >
+              </li>
+              <li class="w-full hover:font-bold">
+                <a href="#" class="block w-full h-full px-5 py-2">Ogrodzenia</a>
+              </li>
+              <li class="w-full hover:font-bold">
+                <a href="#" class="block w-full h-full px-5 py-2"
+                  >Ogrody warzywne</a
+                >
+              </li>
+              <li class="w-full hover:font-bold">
+                <a href="#" class="block w-full h-full px-5 py-2"
+                  >Pielęgnacja trawnika</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-6 py-3 rounded-full hover:text-gray-300 hover:bg-almostblack transition-all"
+              >O firmie</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-6 py-3 rounded-full hover:text-gray-200 hover:bg-almostblack transition-all"
+              >Realizacje</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-6 py-3 rounded-full hover:text-gray-200 hover:bg-almostblack transition-all"
+              >Kontakt</a
+            >
+          </li>
+          <li>
+            <div
+              class="search hover:bg-almostblack hover:text-gray-200 cursor-pointer p-2 rounded-full transition-all hover:scale-110"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6 rounded-full"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div
+              class="search-input scale-0 absolute flex p-1 translate-x-[-40%] bg-white drop-shadow-2xl rounded-full gap-x-2 px-3 transition-all"
+            >
+              <input
+                class="rounded-full px-3 py-1 border-2 border-almostblack border-opacity-70 border-solid"
+              />
+              <div
+                class="hover:bg-almostblack hover:text-gray-200 cursor-pointer p-2 rounded-full transition-all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 rounded-full cursor-pointer"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div
+                class="close-search hover:bg-almostblack hover:text-gray-200 cursor-pointer p-2 rounded-full transition-all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 cursor-pointer"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
     </section>
-    <section class="h-[50vh] w-full bg-almostblack"></section>
+    <section
+      class="h-[150vh] w-full bg-gradient-to-b from-forestgreen to-slate-400"
+    ></section>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.search').click(function () {
+          $('.search').toggleClass('active');
+          $('.offer').removeClass('active');
+        });
+      });
+      $(document).ready(function () {
+        $('.close-search').click(function () {
+          $('.search').toggleClass('active');
+        });
+      });
+      $(document).ready(function () {
+        $('.offer').click(function () {
+          $('.offer').toggleClass('active');
+          $('.search').removeClass('active');
+        });
+      });
+    </script>
   </body>
 </html>
