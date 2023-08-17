@@ -14,24 +14,24 @@
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="/public/apple-touch-icon.png"
+      href="/public/head/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/public/favicon-32x32.png"
+      href="/public/head/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/public/favicon-16x16.png"
+      href="/public/head/favicon-16x16.png"
     />
-    <link rel="manifest" href="/public/site.webmanifest" />
+    <link rel="manifest" href="/public/head/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="/public/safari-pinned-tab.svg"
+      href="/public/head/safari-pinned-tab.svg"
       color="#5bbad5"
     />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -49,17 +49,31 @@
           <a href="#">
             <img
               class="scale-125"
-              src="public\giarddesign.svg"
+              src="public\images\giarddesign.svg"
               alt="Logo Strony"
           /></a>
         </div>
         <ul class="flex space-x-12 items-center">
           <li class="relative">
-            <p
-              class="offer px-6 py-3 rounded-full hover:text-gray-200 hover:bg-almostblack cursor-pointer"
+            <div
+              class="offer flex items-center gap-2 px-6 py-3 rounded-full hover:text-gray-200 hover:bg-almostblack cursor-pointer"
             >
-              Oferta
-            </p>
+              <p>Oferta</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="dropdown-icon active w-5 h-5 transition-all duration-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
             <ul
               class="-z-[1] offer-list text-center flex flex-col justify-center pb-1 align-middle absolute left-1/2 translate-x-[-50%] translate-y-[-100%] w-[220px] scale-0 rounded-b-xl bg-white drop-shadow-2xl duration-500"
             >
@@ -173,7 +187,11 @@
     </section>
     <section
       class="h-[150vh] w-full bg-gradient-to-b from-forestgreen to-slate-400"
-    ></section>
+    >
+      <div class="slider-wrapper">
+        <div class="slider"></div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.7.0.js"
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
@@ -184,6 +202,7 @@
         $('.search').click(function () {
           $('.search').toggleClass('active');
           $('.offer').removeClass('active');
+          $('.dropdown-icon').removeClass('active');
         });
       });
       $(document).ready(function () {
@@ -194,6 +213,7 @@
       $(document).ready(function () {
         $('.offer').click(function () {
           $('.offer').toggleClass('active');
+          $('.dropdown-icon').toggleClass('active');
           $('.search').removeClass('active');
         });
       });

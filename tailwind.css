@@ -35,3 +35,7 @@
   visibility: visible;
   z-index: 0;
 }
+
+.offer.active > .dropdown-icon {
+  transform: rotate(180deg);
+}
