@@ -214,7 +214,7 @@
               </button>
               <a href="#third_section">
                 <button
-                  class="flex w-64 items-center justify-center gap-x-2 py-3 group bg-transparent hover:rotate-3 hover:bg-forestgreen hover:bg-opacity-30 text-forestgreen border-solid border-2 border-forestgreen transition-all rounded-full"
+                  class="flex w-64 items-center justify-center gap-x-2 py-3 group bg-transparent hover:rotate-3 hover:bg-white hover:bg-opacity-20 text-forestgreen border-solid border-2 border-forestgreen transition-all rounded-full"
                 >
                   Zobacz nasze realizacje
                   <svg
@@ -300,6 +300,7 @@
     <section
       class="max-w-[1536px] mx-auto mt-[823px] pb-32 bg-lightbeige relative"
     >
+      <!-- ==== SLIDER NAV ====-->
       <div
         class="slider-nav flex justify-center bg-lightbeige items-center absolute right-0 translate-y-[-100%] rounded-t-lg overflow-hidden drop-north-shadow"
       >
@@ -354,6 +355,7 @@
           etapie posłużymy radą i wieloletnim doświadczeniem.
         </p>
       </div>
+      <!-- ==== GRID COLUMNS ====-->
       <div class="mt-20 px-24 grid grid-cols-3 gap-16">
         <div
           class="w-full h-full aspect-square bg-white rounded-3xl p-12 flex flex-col"
@@ -452,7 +454,42 @@
             <div
               class="w-1/2 h-full bg-[url('/public/images/third_section_garden.png')] bg-cover bg-no-repeat"
             ></div>
-            <div class="w-1/2 max-w-[768px] h-full bg-forestgreen"></div>
+            <div
+              class="w-1/2 max-w-[768px] h-full bg-forestgreen flex flex-col justify-center pl-40 pr-32 text-lightbeige"
+            >
+              <h3 class="text-md">O firmie</h3>
+              <h5 class="mt-5 text-5xl font-monts font-medium leading-[120%]">
+                Tworzymy<br />
+                z pasją
+              </h5>
+              <p class="mt-10 text-md">
+                Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+                wykwalifikowani projektanci oraz architekci, których zadaniem
+                jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+                specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+                minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+                małoobsługowe, dostosowane do współczesnego trybu życia.
+              </p>
+              <button
+                class="flex w-64 mt-16 items-center justify-center gap-x-2 py-3 group bg-transparent hover:rotate-3 hover:pl-5 hover:pr-1hover:drop-shadow-xl hover:bg-lightbeige hover:bg-opacity-10 text-lightbeige border-solid border-2 border-lightbeige transition-all rounded-full hover:"
+              >
+                Poznaj nas bliżej
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 group-hover:translate-x-1 transition-all"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
