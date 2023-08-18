@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -38,4 +39,24 @@
 
 .offer.active > .dropdown-icon {
   transform: rotate(180deg);
+}
+
+.drop-north-shadow {
+  --tw-drop-shadow: drop-shadow(0 -20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 -8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.slide-in {
+  transform: translateX(0%);
+}
+
+.slide-right {
+  transform: translateX(100%);
+}
+
+.slide-left {
+  transform: translateX(-100%);
 }

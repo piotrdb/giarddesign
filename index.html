@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <title>giard ‖ design</title>
@@ -37,10 +37,10 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
   </head>
-  <!-- ==== BODY ==== -->
-  <body class="font-inter">
+  <body class="font-inter overflow-x-hidden">
+    <!-- ==== NAVBAR SECTION ==== -->
     <section
-      class="bg-white flex justify-center items-center py-5 w-full fixed"
+      class="bg-white flex justify-center items-center py-5 w-full fixed z-10 drop-shadow-md"
     >
       <nav
         class="text-almostblack max-w-[1536px] w-full py-2 px-16 flex justify-between items-center"
@@ -75,7 +75,7 @@
               </svg>
             </div>
             <ul
-              class="-z-[1] offer-list text-center flex flex-col justify-center pb-1 align-middle absolute left-1/2 translate-x-[-50%] translate-y-[-100%] w-[220px] scale-0 rounded-b-xl bg-white drop-shadow-2xl duration-500"
+              class="-z-[1] offer-list text-center flex flex-col justify-center pb-1 align-middle absolute left-1/2 translate-x-[-50%] translate-y-[-100%] w-[220px] scale-0 rounded-b-xl bg-white drop-shadow-sm duration-500"
             >
               <li class="w-full hover:font-bold">
                 <a href="#" class="block w-full h-full px-5 py-2"
@@ -88,7 +88,9 @@
                 >
               </li>
               <li class="w-full hover:font-bold">
-                <a href="#" class="block w-full h-full px-5 py-2">Ogrodzenia</a>
+                <a href="#" class="block w-full h-full px-5 py-2"
+                  >Ogrody zimowe</a
+                >
               </li>
               <li class="w-full hover:font-bold">
                 <a href="#" class="block w-full h-full px-5 py-2"
@@ -185,11 +187,274 @@
         </ul>
       </nav>
     </section>
+    <!-- ==== SLIDER SECTION ==== -->
+    <section class="flex w-full relative">
+      <div
+        class="slides absolute left-0 top-[103px] flex flex-row-reverse h-[720px] w-full transition-all duration-500"
+      >
+        <div
+          class="w-1/2 h-full bg-[url('/public/images/slider_1.png')] bg-cover bg-no-repeat"
+        ></div>
+        <div class="w-1/2 max-w-[768px] h-full bg-darkbeige">
+          <div id="slide-1-content-wrapper" class="py-24 pl-20 pr-36">
+            <h1 class="text-[64px] font-monts font-medium leading-[115%] mb-12">
+              Nowoczesna aranżacja <br />
+              Twojego ogrodu
+            </h1>
+            <h5 class="text-[17px] leading-[165%] mb-12 pr-12">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+              podejściem do każdego projektu.
+            </h5>
+            <div class="flex w-full gap-x-10">
+              <button
+                class="w-56 bg-forestgreen hover:bg-gradient-to-t hover:from-forestgreen hover:to-green-800 font-light text-white hover:-translate-y-1 hover:drop-shadow-xl rounded-full transition-all"
+              >
+                Skontaktuj się z nami
+              </button>
+              <a href="#third_section">
+                <button
+                  class="flex w-64 items-center justify-center gap-x-2 py-3 group bg-transparent hover:rotate-3 hover:bg-forestgreen hover:bg-opacity-30 text-forestgreen border-solid border-2 border-forestgreen transition-all rounded-full"
+                >
+                  Zobacz nasze realizacje
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 group-hover:animate-bounce transition-all"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+                    />
+                  </svg></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="slides absolute left-0 top-[103px] invisible flex flex-row-reverse h-[720px] w-full transition-all duration-500"
+      >
+        <div
+          class="w-1/2 h-full bg-[url('/public/images/slider_2.jpg')] bg-cover bg-no-repeat"
+        ></div>
+        <div class="w-1/2 max-w-[768px] h-full bg-darkbeige">
+          <div id="slide-2-content-wrapper" class="py-16 pl-20 pr-32">
+            <h3 class="text-[60px] font-monts font-medium leading-[115%] mb-12">
+              Magiczna przestrzeń przez Cztery Pory Roku
+            </h3>
+            <h5 class="text-[17px] leading-[165%] mb-12 pr-8">
+              Nasze ogrody zimowe to prawdziwa poezja natury nawet w najbardziej
+              surowych warunkach. Tworzymy kompozycje roślinne, które zachwycają
+              swoją urodą nie tylko latem, ale także zimą, kiedy przyroda
+              spoczywa pod warstwą śniegu. Dzięki starannie dobranym roślinom,
+              elementom architektury ogrodowej i oświetleniu, nasze ogrody
+              zimowe stwarzają magiczny klimat, który umożliwia cieszenie się
+              pięknem ogrodu przez cały rok.
+            </h5>
+            <div class="flex w-full gap-x-10">
+              <button
+                class="w-56 py-3 bg-forestgreen hover:bg-gradient-to-t hover:from-forestgreen hover:to-green-800 font-light text-white hover:-translate-y-1 hover:drop-shadow-xl rounded-full transition-all"
+              >
+                Dowiedz się więcej
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="slides absolute left-0 top-[103px] invisible flex flex-row-reverse h-[720px] w-full transition-all duration-500"
+      >
+        <div
+          class="w-1/2 h-full bg-[url('/public/images/slider_3.jpg')] bg-cover bg-no-repeat"
+        ></div>
+        <div class="w-1/2 max-w-[768px] h-full bg-darkbeige">
+          <div id="slide-1-content-wrapper" class="py-20 pl-20 pr-36">
+            <h3 class="text-[64px] font-monts font-medium leading-[115%] mb-12">
+              Żniwa z Twojego ogrodu
+            </h3>
+            <h5 class="text-[17px] leading-[165%] mb-12 pr-12">
+              Jeśli jesteś miłośnikiem świeżych warzyw i ziół, nasze ogrody
+              warzywne są dla Ciebie stworzone. Projektujemy ogrody, które nie
+              tylko zachwycają estetyką, ale także dostarczają świeżych,
+              organicznych produktów prosto z Twojego podwórka. Nasze pomysły
+              łączą funkcjonalność, ekologię i piękno, umożliwiając Ci czerpanie
+              radości zarówno z uprawy, jak i spożywania własnych plonów.
+            </h5>
+            <div class="flex w-full gap-x-10">
+              <button
+                class="w-56 py-3 bg-forestgreen hover:bg-gradient-to-t hover:from-forestgreen hover:to-green-800 font-light text-white hover:-translate-y-1 hover:drop-shadow-xl rounded-full transition-all"
+              >
+                Dowiedz się więcej
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== SECOND SECTION ==== -->
     <section
-      class="h-[150vh] w-full bg-gradient-to-b from-forestgreen to-slate-400"
+      class="max-w-[1536px] mx-auto mt-[823px] pb-32 bg-lightbeige relative"
     >
-      <div class="slider-wrapper">
-        <div class="slider"></div>
+      <div
+        class="slider-nav flex justify-center bg-lightbeige items-center absolute right-0 translate-y-[-100%] rounded-t-lg overflow-hidden drop-north-shadow"
+      >
+        <button
+          onClick="plusDivs(-1)"
+          class="flex items-center justify-center w-20 h-20 hover:bg-forestgreen hover:text-white transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-7 h-7"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+            />
+          </svg>
+        </button>
+        <button
+          onClick="plusDivs(+1)"
+          class="flex items-center justify-center w-20 h-20 hover:bg-forestgreen hover:text-white transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-7 h-7"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="max-w-3xl ml-64 pt-28">
+        <h3 class="text-md text-forestgreen">Oferta</h3>
+        <h5 class="mt-5 text-5xl font-monts font-medium">
+          Działamy <i class="font-inter">kompleksowo</i>
+        </h5>
+        <p class="mt-8 text-md">
+          Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
+          nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla
+          Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
+          etapie posłużymy radą i wieloletnim doświadczeniem.
+        </p>
+      </div>
+      <div class="mt-20 px-24 grid grid-cols-3 gap-16">
+        <div
+          class="w-full h-full aspect-square bg-white rounded-3xl p-12 flex flex-col"
+        >
+          <img src="/public/images/offer_icon_1.svg" class="w-12 h-12" />
+          <h6 class="mt-6 text-3xl font-monts font-medium">Projekty</h6>
+          <p class="mt-3">
+            Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+            wykorzystaniem istniejącej przestrzeni.
+          </p>
+          <a
+            class="mt-auto mr-auto group gap-x-2 font-medium flex items-center pb-1 pr-1 border-b-[1px] text-forestgreen border-solid border-forestgreen hover:pl-1 hover:pr-0 transition-all"
+            href=""
+            >Dowiedz się więcej
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 group-hover:translate-x-1 transition-all"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="w-full h-full aspect-square bg-white rounded-3xl p-12 flex flex-col"
+        >
+          <img src="/public/images/offer_icon_2.svg" class="w-12 h-12" />
+          <h6 class="mt-6 text-3xl font-monts font-medium">Wizualizacje</h6>
+          <p class="mt-3">
+            Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
+            animowanego w technologii 3D.
+          </p>
+          <a
+            class="mt-auto mr-auto group gap-x-2 font-medium flex items-center pb-1 pr-1 border-b-[1px] text-forestgreen border-solid border-forestgreen hover:pl-1 hover:pr-0 transition-all"
+            href=""
+            >Dowiedz się więcej
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 group-hover:translate-x-1 transition-all"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="w-full h-full aspect-square bg-white rounded-3xl p-12 flex flex-col"
+        >
+          <img src="/public/images/offer_icon_3.svg" class="w-12 h-12" />
+          <h6 class="mt-6 text-3xl font-monts font-medium">Realizacje</h6>
+          <p class="mt-3">
+            Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+            zaawansowanych technologii.
+          </p>
+          <a
+            class="mt-auto mr-auto group gap-x-2 font-medium flex items-center pb-1 pr-1 border-b-[1px] text-forestgreen border-solid border-forestgreen hover:pl-1 hover:pr-0 transition-all"
+            href=""
+            >Zobacz nasze realizacje
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 group-hover:translate-x-1 transition-all"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ==== THIRD SECTION ==== -->
+    <section id="third_section">
+      <div>
+        <div class="flex">
+          <div class="slide-1 flex h-[720px] w-full bg-gradient-to-lb">
+            <div
+              class="w-1/2 h-full bg-[url('/public/images/third_section_garden.png')] bg-cover bg-no-repeat"
+            ></div>
+            <div class="w-1/2 max-w-[768px] h-full bg-forestgreen"></div>
+          </div>
+        </div>
       </div>
     </section>
     <script
@@ -198,6 +463,35 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript">
+      var slideIndex = 0;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName('slides');
+        if (x.length <= n) {
+          slideIndex = 0;
+        }
+        if (n < 0) {
+          slideIndex = x.length - 1;
+        }
+        for (i = 0; i < x.length; i++) {
+          if (i < slideIndex) {
+            x[i].classList.remove('slide-in', 'slide-right');
+            x[i].classList.add('slide-left', 'invisible');
+          } else if (i > slideIndex) {
+            x[i].classList.remove('slide-in', 'slide-left');
+            x[i].classList.add('slide-right', 'invisible');
+          } else {
+            x[i].classList.remove('slide-right', 'slide-left', 'invisible');
+            x[i].classList.add('slide-in');
+          }
+        }
+      }
       $(document).ready(function () {
         $('.search').click(function () {
           $('.search').toggleClass('active');

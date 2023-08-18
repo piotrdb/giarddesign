@@ -258,11 +258,13 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        monts: ['Montserrat', 'sans-serif'],
       },
       colors: {
         almostblack: '#111111',
         forestgreen: '#1B5B31',
         darkbeige: '#DCC1AB',
+        mediumbeige: '#DDD7C8',
         lightbeige: '#F5F0EC',
       },
     },
