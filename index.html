@@ -146,7 +146,8 @@
               class="search-input scale-0 absolute flex p-1 translate-x-[-40%] bg-white drop-shadow-2xl rounded-full gap-x-2 px-3 transition-all"
             >
               <input
-                class="rounded-full px-3 py-1 border-2 border-almostblack border-opacity-70 border-solid"
+                placeholder="Szukaj..."
+                class="rounded-full px-4 py-1 border-2 border-almostblack border-opacity-70 border-solid"
               />
               <div
                 class="hover:bg-almostblack hover:text-gray-200 cursor-pointer p-2 rounded-full transition-all"
@@ -187,7 +188,7 @@
         </ul>
       </nav>
     </section>
-    <!-- ==== SLIDER SECTION ==== -->
+    <!-- ==== INTRO SECTION ==== -->
     <section class="flex w-full relative">
       <div
         class="slides absolute left-0 top-[103px] flex flex-row-reverse h-[720px] w-full transition-all duration-500"
@@ -296,7 +297,7 @@
         </div>
       </div>
     </section>
-    <!-- ==== SECOND SECTION ==== -->
+    <!-- ==== OFFER SECTION ==== -->
     <section
       class="max-w-[1536px] mx-auto mt-[823px] pb-32 bg-lightbeige relative"
     >
@@ -446,7 +447,7 @@
         </div>
       </div>
     </section>
-    <!-- ==== THIRD SECTION ==== -->
+    <!-- ==== ABOUT SECTION ==== -->
     <section id="third_section">
       <div>
         <div class="flex">
@@ -494,6 +495,144 @@
         </div>
       </div>
     </section>
+    <!-- ==== MASONRY SECTION ====-->
+    <section class="max-w-[1536px] mx-auto bg-darkbeige relative">
+      <div class="max-w-3xl ml-64 pt-28">
+        <h3 class="text-md text-forestgreen">Realizacje</h3>
+        <h5 class="mt-5 mb-24 text-5xl font-monts font-medium">
+          Nasze <i class="font-inter">projekty</i>
+        </h5>
+      </div>
+      <div
+        class="projects-masonry grid js-masonry mx-10 overflow-hidden transition-all duration-1000"
+        data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 0}'
+      >
+        <div class="grid-item w-1/3 p-5">
+          <img
+            src="public/images/project_0.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+        <div class="grid-item w-1/3 p-5">
+          <img
+            src="public/images/project_1.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+        <div class="grid-item w-1/3 p-5">
+          <img
+            src="public/images/project_2.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+        <div class="grid-item w-1/3 p-5">
+          <img
+            src="public/images/project_3.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+        <div class="grid-item w-1/3 p-5">
+          <img
+            src="public/images/project_4.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+        <div class="grid-item w-1/3 p-5">
+          <img
+            src="public/images/project_5.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+        <div class="grid-item w-1/3 p-5">
+          <img
+            src="public/images/project_6.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+        <div class="grid-item w-1/3 p-5">
+          <img
+            src="public/images/project_7.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+        <div class="grid-item w-1/3 p-5">
+          <img
+            src="public/images/project_8.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+        <div class="grid-item w-1/3 p-5 overflow-hidden">
+          <img
+            src="public/images/project_9.png"
+            alt=""
+            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+          />
+        </div>
+      </div>
+      <div class="h-40 pb-16 flex items-center justify-center">
+        <button
+          class="hide-projects flex pl-6 pr-4 pointer-events-auto items-center justify-center hover:to-transparent py-3 group bg-darkbeige bg-opacity-70 hover:-translate-y-3 hover:bg-white hover:bg-opacity-20 text-almostblack border-solid border-2 border-almostblack transition-all rounded-full duration-1000"
+        >
+          Schowaj
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 rotate-180 transition-all"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="projects-overlay absolute bottom-0 left-0 mb-[840px] pointer-events-none h-[720px] w-full flex items-end justify-center bg-gradient-to-b from-transparent to-darkbeige duration-1000"
+      >
+        <button
+          class="expand-projects flex mb-24 pl-6 pr-4 pointer-events-auto items-center justify-center hover:to-transparent py-3 group bg-darkbeige bg-opacity-70 hover:translate-y-3 hover:bg-white hover:bg-opacity-20 text-almostblack border-solid border-2 border-almostblack transition-all rounded-full duration-1000"
+        >
+          Rozwiń
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 transition-all"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section
+      class="contact-section relative max-w-[1536px] w-full mx-auto mt-[-840px] duration-1000"
+    >
+      <div
+        class="contact-div h-[720px] w-full bg-forestgreen duration-1000"
+      ></div>
+    </section>
+    <footer class="h-[420px] w-full bg-black duration-1000 relative"></footer>
+    <script src="/masonry/masonry.pkgd.min.js"></script>
+    <script></script>
     <script
       src="https://code.jquery.com/jquery-3.7.0.js"
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
@@ -529,6 +668,8 @@
           }
         }
       }
+    </script>
+    <script type="text/javascript">
       $(document).ready(function () {
         $('.search').click(function () {
           $('.search').toggleClass('active');
@@ -546,6 +687,26 @@
           $('.offer').toggleClass('active');
           $('.dropdown-icon').toggleClass('active');
           $('.search').removeClass('active');
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.expand-projects').hover(function () {
+          $('.projects-overlay').toggleClass('opacity-50');
+        });
+        $('.expand-projects').click(function () {
+          $('.projects-overlay').toggleClass('opacity-0 mb-[840px]');
+          $('.expand-projects').toggleClass('hidden');
+          $('.contact-section').toggleClass('mt-[-840px]');
+        });
+        $('.hide-projects').hover(function () {
+          $('.projects-overlay').toggleClass('opacity-100');
+        });
+        $('.hide-projects').click(function () {
+          $('.projects-overlay').toggleClass('opacity-0 mb-[840px]');
+          $('.expand-projects').toggleClass('hidden');
+          $('.contact-section').toggleClass('mt-[-840px]');
         });
       });
     </script>
