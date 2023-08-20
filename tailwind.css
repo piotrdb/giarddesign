@@ -60,3 +60,38 @@
 .slide-left {
   transform: translateX(-100%);
 }
+
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 110%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: -5%;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline-logo::after {
+  background-color: black;
+  width: 125%;
+  left: -12.5%;
+  transition: transform 0.5s ease-out;
+}
+
+.time-3000 {
+  animation-duration: 3000ms;
+}
