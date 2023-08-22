@@ -630,63 +630,72 @@
           <img
             src="public/images/project_1.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(2)"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(2)"
           />
         </div>
         <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_2.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(3)"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(3)"
           />
         </div>
         <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_3.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(4)"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(4)"
           />
         </div>
         <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_4.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(5)"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(5)"
           />
         </div>
         <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_5.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(6)"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(6)"
           />
         </div>
         <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_6.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(7)"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(7)"
           />
         </div>
         <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_7.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(8)"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(8)"
           />
         </div>
         <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_8.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(9)"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(9)"
           />
         </div>
         <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_9.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(10)"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(10)"
           />
         </div>
       </div>
@@ -736,39 +745,81 @@
       </div>
     </section>
     <!-- ==== IMAGE GALLERY ==== -->
-    <div class="gallery-overlay bg-almostblack fixed left-0 top-0 z-50 h-full w-full bg-opacity-70 justify-center flex items-center">
-      <button class="absolute top-5 right-5 text-2xl p-2 sm:text-3xl lg:text-4xl bg-almostblack flex justify-center items-center aspect-square sm:p-3 lg:p-4 hover:bg-zinc-800 rounded-lg text-white" onclick="closeGallery()">&#10006;</button>
-      <button class="block pointer p-2 pl-3 sm:p-8 sm:pr-3 lg:p-12 lg:pr-6 font-bold rounded-l-full text-3xl sm:text-4xl lg:rounded-l-3xl bg-almostblack hover:bg-zinc-800 text-white" onclick="plusImages(-1)">&#10094;</button>
+    <div
+      class="gallery-overlay bg-almostblack fixed left-0 top-0 z-50 flex h-full w-full items-center justify-center bg-opacity-70"
+    >
+      <button
+        class="bg-almostblack absolute right-5 top-5 flex aspect-square items-center justify-center rounded-lg p-2 text-2xl text-white hover:bg-zinc-800 sm:p-3 sm:text-3xl lg:p-4 lg:text-4xl"
+        onclick="closeGallery()"
+      >
+        &#10006;
+      </button>
+      <button
+        class="pointer bg-almostblack block rounded-l-full p-2 pl-3 text-3xl font-bold text-white hover:bg-zinc-800 sm:p-8 sm:pr-3 sm:text-4xl lg:rounded-l-3xl lg:p-12 lg:pr-6"
+        onclick="plusImages(-1)"
+      >
+        &#10094;
+      </button>
       <div class="gallery-image hidden">
-        <img src="/public/images/project_0.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+        <img
+          src="/public/images/project_0.png"
+          class="max-h-[90vh] w-[75vw] max-w-[90vw] object-cover sm:w-[78vw] md:w-[75vw] lg:w-[600px]"
+        />
       </div>
       <div class="gallery-image hidden">
-        <img src="/public/images/project_1.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+        <img
+          src="/public/images/project_1.png"
+          class="max-h-[90vh] w-[75vw] max-w-[90vw] object-cover sm:w-[78vw] md:w-[75vw] lg:w-[600px]"
+        />
       </div>
       <div class="gallery-image hidden">
-        <img src="/public/images/project_2.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+        <img
+          src="/public/images/project_2.png"
+          class="max-h-[90vh] w-[75vw] max-w-[90vw] object-cover sm:w-[78vw] md:w-[75vw] lg:w-[600px]"
+        />
       </div>
       <div class="gallery-image hidden">
-        <img src="/public/images/project_3.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+        <img
+          src="/public/images/project_3.png"
+          class="max-h-[90vh] w-[75vw] max-w-[90vw] object-cover sm:w-[78vw] md:w-[75vw] lg:w-[600px]"
+        />
       </div>
       <div class="gallery-image hidden">
-        <img src="/public/images/project_4.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+        <img
+          src="/public/images/project_4.png"
+          class="max-h-[90vh] w-[75vw] max-w-[90vw] object-cover sm:w-[78vw] md:w-[75vw] lg:w-[600px]"
+        />
       </div>
       <div class="gallery-image hidden">
-        <img src="/public/images/project_5.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+        <img
+          src="/public/images/project_5.png"
+          class="max-h-[90vh] w-[75vw] max-w-[90vw] object-cover sm:w-[78vw] md:w-[75vw] lg:w-[600px]"
+        />
       </div>
       <div class="gallery-image hidden">
-        <img src="/public/images/project_6.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+        <img
+          src="/public/images/project_6.png"
+          class="max-h-[90vh] w-[75vw] max-w-[90vw] object-cover sm:w-[78vw] md:w-[75vw] lg:w-[600px]"
+        />
       </div>
       <div class="gallery-image hidden">
-        <img src="/public/images/project_7.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+        <img
+          src="/public/images/project_7.png"
+          class="max-h-[90vh] w-[75vw] max-w-[90vw] object-cover sm:w-[78vw] md:w-[75vw] lg:w-[600px]"
+        />
       </div>
       <div class="gallery-image hidden">
-        <img src="/public/images/project_8.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+        <img
+          src="/public/images/project_8.png"
+          class="max-h-[90vh] w-[75vw] max-w-[90vw] object-cover sm:w-[78vw] md:w-[75vw] lg:w-[600px]"
+        />
       </div>
-      <!-- Next and previous buttons -->
-      <button class="block pointer p-2 pr-3 sm:p-8 sm:pl-3 lg:p-12 lg:pl-6 font-bold rounded-r-full text-3xl sm:text-4xl lg:rounded-r-3xl bg-almostblack hover:bg-zinc-800 text-white" onclick="plusImages(1)">&#10095;</button>
-    </div>
+      <button
+        class="pointer bg-almostblack block rounded-r-full p-2 pr-3 text-3xl font-bold text-white hover:bg-zinc-800 sm:p-8 sm:pl-3 sm:text-4xl lg:rounded-r-3xl lg:p-12 lg:pl-6"
+        onclick="plusImages(1)"
+      >
+        &#10095;
+      </button>
     </div>
     <!-- ==== CONTACT ==== -->
     <section
@@ -876,10 +927,10 @@
       function currentImage(n) {
         showImages((imageIndex = n))
         console.log('show images', n)
-        $('.gallery-overlay').toggleClass('hidden flex');
+        $('.gallery-overlay').toggleClass('hidden flex')
       }
-      function closeGallery(){
-        $('.gallery-overlay').toggleClass('hidden flex');
+      function closeGallery() {
+        $('.gallery-overlay').toggleClass('hidden flex')
       }
       function showImages(n) {
         let i
