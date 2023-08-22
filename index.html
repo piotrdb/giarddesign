@@ -27,7 +27,7 @@
       <nav
         class="text-almostblack flex w-full max-w-[1536px] flex-col items-center justify-between sm:flex-row sm:px-4 md:px-6 md:py-2 lg:px-16"
       >
-        <div class="lg:hover-underline lg:underline-logo flex items-center">
+        <div class="hover-underline underline-logo flex items-center">
           <a href="#">
             <img
               class="mb-1 ml-2 scale-110 py-2 sm:mb-0 lg:scale-125"
@@ -607,91 +607,92 @@
     </section>
     <!-- ==== MASONRY SECTION ====-->
     <section id="masonry-section" class="bg-darkbeige relative mx-auto max-w-[1536px]">
-      <div class="ml-10 sm:ml-16 md:ml-32 lg:ml-48 xl:ml-64 pt-14 md:pt-20 lg:pt-28">
+      <div class="ml-10 pt-14 sm:ml-16 md:ml-32 md:pt-20 lg:ml-48 lg:pt-28 xl:ml-64">
         <h3 class="text-md text-forestgreen">Realizacje</h3>
-        <h5 class="font-monts mb-10 md:mb-16 lg:mb-24 mt-5 text-4xl lg:text-5xl font-medium">
+        <h5 class="font-monts mb-10 mt-5 text-4xl font-medium md:mb-16 lg:mb-24 lg:text-5xl">
           Nasze
           <i class="font-inter">projekty</i>
         </h5>
       </div>
       <div
-        class="projects-masonry js-masonry mx-10 grid overflow-hidden transition-all duration-1000"
+        class="projects-masonry js-masonry mx-5 grid overflow-hidden transition-all duration-1000 md:mx-10"
         data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 0}'
       >
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_0.png"
             alt="project photo"
             class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            onClick="currentImage(1)"
           />
         </div>
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_1.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(2)"
           />
         </div>
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_2.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(3)"
           />
         </div>
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_3.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(4)"
           />
         </div>
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_4.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(5)"
           />
         </div>
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_5.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(6)"
           />
         </div>
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_6.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(7)"
           />
         </div>
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_7.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(8)"
           />
         </div>
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_8.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(9)"
           />
         </div>
-        <div class="grid-item w-1/2 lg:w-1/3 lg:p-5 md:p-4 sm:p-2 p-1">
+        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
             src="public/images/project_9.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105" onClick="currentImage(10)"
           />
         </div>
       </div>
-      <div class="flex pt-6 lg:h-40 items-center justify-center pb-6 md:pb-8 lg:pb-16">
+      <div class="flex items-center justify-center pb-6 pt-6 md:pb-8 lg:h-40 lg:pb-16">
         <button
-          class="invisible hide-projects bg-darkbeige text-almostblack border-almostblack group pointer-events-auto flex items-center justify-center rounded-full border-2 border-solid bg-opacity-70 py-3 pl-6 pr-4 transition-all duration-1000 hover:-translate-y-3 hover:bg-white hover:bg-opacity-20 hover:to-transparent"
+          class="hide-projects bg-darkbeige text-almostblack border-almostblack group pointer-events-auto hidden items-center justify-center rounded-full border-2 border-solid bg-opacity-70 py-3 pl-6 pr-4 transition-all duration-1000 hover:-translate-y-3 hover:bg-white hover:bg-opacity-20 hover:to-transparent"
         >
           Schowaj
           <svg
@@ -711,7 +712,7 @@
         </button>
       </div>
       <div
-        class="projects-overlay to-darkbeige pointer-events-none absolute bottom-0 left-0 mb-[400px] sm:mb-[840px] flex h-[720px] w-full items-end justify-center bg-gradient-to-b from-transparent transition-all duration-1000"
+        class="projects-overlay to-darkbeige pointer-events-none absolute bottom-0 left-0 mb-[400px] flex h-[720px] w-full items-end justify-center bg-gradient-to-b from-transparent transition-all duration-1000 sm:mb-[840px]"
       >
         <button
           class="expand-projects bg-darkbeige text-almostblack border-almostblack group pointer-events-auto mb-24 flex items-center justify-center rounded-full border-2 border-solid bg-opacity-70 py-3 pl-6 pr-4 transition-all duration-1000 hover:translate-y-3 hover:bg-white hover:bg-opacity-20 hover:to-transparent"
@@ -734,24 +735,67 @@
         </button>
       </div>
     </section>
+    <!-- ==== IMAGE GALLERY ==== -->
+    <div class="gallery-overlay bg-almostblack fixed left-0 top-0 z-50 h-full w-full bg-opacity-70 justify-center flex items-center">
+      <button class="absolute top-5 right-5 text-2xl p-2 sm:text-3xl lg:text-4xl bg-almostblack flex justify-center items-center aspect-square sm:p-3 lg:p-4 hover:bg-zinc-800 rounded-lg text-white" onclick="closeGallery()">&#10006;</button>
+      <button class="block pointer p-2 pl-3 sm:p-8 sm:pr-3 lg:p-12 lg:pr-6 font-bold rounded-l-full text-3xl sm:text-4xl lg:rounded-l-3xl bg-almostblack hover:bg-zinc-800 text-white" onclick="plusImages(-1)">&#10094;</button>
+      <div class="gallery-image hidden">
+        <img src="/public/images/project_0.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+      </div>
+      <div class="gallery-image hidden">
+        <img src="/public/images/project_1.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+      </div>
+      <div class="gallery-image hidden">
+        <img src="/public/images/project_2.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+      </div>
+      <div class="gallery-image hidden">
+        <img src="/public/images/project_3.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+      </div>
+      <div class="gallery-image hidden">
+        <img src="/public/images/project_4.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+      </div>
+      <div class="gallery-image hidden">
+        <img src="/public/images/project_5.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+      </div>
+      <div class="gallery-image hidden">
+        <img src="/public/images/project_6.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+      </div>
+      <div class="gallery-image hidden">
+        <img src="/public/images/project_7.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+      </div>
+      <div class="gallery-image hidden">
+        <img src="/public/images/project_8.png" class="w-[75vw] sm:w-[78vw] md:w-[75vw] lg:w-[600px] max-w-[90vw] max-h-[90vh] object-cover" />
+      </div>
+      <!-- Next and previous buttons -->
+      <button class="block pointer p-2 pr-3 sm:p-8 sm:pl-3 lg:p-12 lg:pl-6 font-bold rounded-r-full text-3xl sm:text-4xl lg:rounded-r-3xl bg-almostblack hover:bg-zinc-800 text-white" onclick="plusImages(1)">&#10095;</button>
+    </div>
+    </div>
     <!-- ==== CONTACT ==== -->
     <section
-      class="contact-section relative mx-auto mt-[-400px] sm:mt-[-840px] w-full max-w-[1536px] transition-all duration-1000"
+      class="contact-section relative mx-auto mt-[-400px] w-full max-w-[1536px] transition-all duration-1000 sm:mt-[-840px]"
     >
       <div class="bg-lightbeige flex h-[560px] w-full items-center justify-center">
-        <div class="bg-forestgreen mx-6 md:mx-12 lg:mx-20 xl:mx-32 flex  h-[400px] w-full items-center justify-center">
-          <div class="px-12 md:px-16 lg:px-24 xl:px-36 flex md:flex-row flex-col w-full items-center justify-around md:justify-between space-x-4">
-            <h4 class="font-monts text-center text-2xl sm:text-3xl md:text-left md:text-4xl leading-[150%] text-white">
+        <div
+          class="bg-forestgreen mx-6 flex h-[400px] w-full items-center justify-center md:mx-12 lg:mx-20 xl:mx-32"
+        >
+          <div
+            class="flex w-full flex-col items-center justify-around space-x-4 px-12 md:flex-row md:justify-between md:px-16 lg:px-24 xl:px-36"
+          >
+            <h4
+              class="font-monts text-center text-2xl leading-[150%] text-white sm:text-3xl md:text-left md:text-4xl"
+            >
               Zostańmy w kontakcie!
               <br />
               Znajdziesz nas na
               <i class="font-inter font-medium italic">Instagramie.</i>
             </h4>
             <div class="w-full md:w-[170px]">
-              <p class="text-white text-center md:text-left mt-6 md:mt-0">Śledź nasze najnowsze realizacje!</p>
+              <p class="mt-6 text-center text-white md:mt-0 md:text-left">
+                Śledź nasze najnowsze realizacje!
+              </p>
               <a href="https://www.instagram.com/">
                 <button
-                  class="block mx-auto text-forestgreen hover:bg-lightbeige mt-3 md:mt-6 rounded-full bg-white px-6 py-3 transition-all hover:drop-shadow-xl"
+                  class="text-forestgreen hover:bg-lightbeige mx-auto mt-3 block rounded-full bg-white px-6 py-3 transition-all hover:drop-shadow-xl md:mt-6"
                 >
                   Instagram
                 </button></a
@@ -762,25 +806,33 @@
       </div>
     </section>
     <!-- ==== FOOTER ====-->
-    <footer class="bg-almostblack relative h-[420px] w-full">
-      <div class="mx-auto h-full w-full max-w-[1536px] px-64 py-16">
+    <footer class="bg-almostblack relative w-full md:h-[420px]">
+      <div
+        class="mx-auto h-full w-full max-w-[1536px] px-3 py-8 sm:px-6 md:px-12 md:py-16 lg:px-32 xl:px-48 2xl:px-64"
+      >
         <div
-          class="border-lightbeige flex w-full items-center justify-between border-b-[1px] border-solid pb-12"
+          class="border-lightbeige flex w-full flex-col items-center justify-between border-b-[1px] border-solid pb-6 md:flex-row md:pb-12"
         >
           <div class="flex items-center">
             <a href="#"> <img src="public\images\giarddesign_white.svg" alt="Logo Strony" /></a>
           </div>
-          <div class="flex items-center gap-x-10">
+          <div
+            class="mt-4 flex flex-col items-center gap-y-4 md:mt-0 md:flex-row md:gap-x-4 md:gap-y-0 lg:gap-x-10"
+          >
             <p class="text-lightbeige">Daj znać, co możemy dla Ciebie zrobić!</p>
             <button
-              class="bg-forestgreen hover:from-forestgreen rounded-full px-6 py-4 font-light text-white transition-all hover:-translate-y-1 hover:bg-gradient-to-t hover:to-green-800 hover:drop-shadow-xl"
+              class="bg-forestgreen hover:from-forestgreen rounded-full px-4 py-3 font-light text-white transition-all hover:-translate-y-1 hover:bg-gradient-to-t hover:to-green-800 hover:drop-shadow-xl md:px-6 md:py-4"
             >
               Skontaktuj się z nami
             </button>
           </div>
         </div>
-        <div class="text-lightbeige mt-12 flex items-center justify-between text-sm">
-          <div class="flex gap-x-12">
+        <div
+          class="text-lightbeige mt-6 flex flex-col items-center justify-between text-sm md:mt-12 md:flex-row"
+        >
+          <div
+            class="flex w-full justify-around md:w-auto md:justify-normal md:gap-x-4 lg:gap-x-12"
+          >
             <a class="hover-underline pb-1 transition-all" href="#">Kontakt</a
             ><a class="hover-underline pb-1 transition-all" href="https://www.instagram.com/"
               >Instagram</a
@@ -790,14 +842,16 @@
               >LinkedIn</a
             >
           </div>
-          <div class="flex gap-x-12">
-            <a href="tel:000000000">000-000-000</a
-            ><a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+          <div class="mt-6 flex gap-x-4 md:mt-0 lg:gap-x-12">
+            <a class="mb-1" href="tel:000000000">000-000-000</a
+            ><a class="mb-1" href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
           </div>
         </div>
-        <div class="text-lightbeige mt-24 flex items-center justify-between text-sm">
-          <p>Prawa zastrzeżone &#169; 2022</p>
-          <div class="flex items-center gap-x-4">
+        <div
+          class="text-lightbeige mt-10 flex items-center justify-between text-[12px] md:mt-24 md:text-sm"
+        >
+          <p>Prawa zastrzeżone <br class="md:hidden" />&#169; 2022</p>
+          <div class="flex items-center gap-x-1 md:gap-x-4">
             <p class="inline">made by</p>
             <a href="https://adrespect.pl/"
               ><img class="inline" src="/public/images/adrespect.svg" alt="adrespect logo"
@@ -813,8 +867,37 @@
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
       crossorigin="anonymous"
     ></script>
+    <script>
+      let imageIndex = 1
+      showImages(imageIndex)
+      function plusImages(n) {
+        showImages((imageIndex += n))
+      }
+      function currentImage(n) {
+        showImages((imageIndex = n))
+        console.log('show images', n)
+        $('.gallery-overlay').toggleClass('hidden flex');
+      }
+      function closeGallery(){
+        $('.gallery-overlay').toggleClass('hidden flex');
+      }
+      function showImages(n) {
+        let i
+        let images = document.getElementsByClassName('gallery-image')
+        if (n > images.length) {
+          imageIndex = 1
+        }
+        if (n < 1) {
+          imageIndex = images.length
+        }
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = 'none'
+        }
+        images[imageIndex - 1].style.display = 'block'
+      }
+    </script>
     <script type="text/javascript">
-      var slideIndex = 0
+      let slideIndex = 0
       showDivs(slideIndex)
 
       function plusDivs(n) {
@@ -877,7 +960,7 @@
           $('.projects-overlay').toggleClass('opacity-0 mb-[400px]')
           $('.projects-overlay').toggleClass('sm:mb-[840px]')
           $('.expand-projects').toggleClass('hidden')
-          $('.hide-projects').toggleClass('invisible')
+          $('.hide-projects').toggleClass('hidden flex')
           $('.contact-section').toggleClass('mt-[-400px]')
           $('.contact-section').toggleClass('sm:mt-[-840px]')
         })
@@ -888,7 +971,7 @@
           $('.projects-overlay').toggleClass('opacity-0 mb-[400px]')
           $('.projects-overlay').toggleClass('sm:mb-[840px]')
           $('.expand-projects').toggleClass('hidden')
-          $('.hide-projects').toggleClass('invisible')
+          $('.hide-projects').toggleClass('hidden flex')
           $('.contact-section').toggleClass('mt-[-400px]')
           $('.contact-section').toggleClass('sm:mt-[-840px]')
         })
