@@ -22,7 +22,7 @@
   <body class="font-inter overflow-x-hidden">
     <!-- ==== NAVBAR ==== -->
     <section
-      class="navbar z-10 flex w-full max-w-[100vw] items-center justify-center bg-white py-2 opacity-0 drop-shadow-md transition-all duration-[2000ms] fixed sm:py-5"
+      class="navbar fixed z-10 flex w-full max-w-[100vw] items-center justify-center bg-white py-2 opacity-0 drop-shadow-md transition-all duration-[2000ms] sm:py-5"
     >
       <nav
         class="text-almostblack flex w-full max-w-[1536px] flex-col items-center justify-between sm:flex-row sm:px-4 md:px-6 md:py-2 lg:px-16"
@@ -171,15 +171,22 @@
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close-menu w-8 h-8 hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="close-menu hidden h-8 w-8"
+          >
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>          
+          </svg>
         </button>
-        <div class="mobile-menu w-full hidden sm:hidden text-xl font-monts">
-          <ul class="flex flex-col items-center space-y-4 w-full">
+        <div class="mobile-menu font-monts hidden w-full text-xl sm:hidden">
+          <ul class="flex w-full flex-col items-center space-y-4">
             <li class="relative order-1 w-full">
               <div
-                class="offer flex justify-center mt-2 py-2 cursor-pointer items-center gap-x-1 w-full leading-none"
+                class="offer mt-2 flex w-full cursor-pointer items-center justify-center gap-x-1 py-2 leading-none"
               >
                 Oferta
                 <svg
@@ -198,7 +205,7 @@
                 </svg>
               </div>
               <ul
-                class="text-lg offer-list py-3 absolute left-1/2 -z-[1] flex gap-y-4 w-full flex-col justify-center bg-white text-center align-middle drop-shadow-sm duration-500"
+                class="offer-list absolute left-1/2 -z-[1] flex w-full flex-col justify-center gap-y-4 bg-white py-3 text-center align-middle text-lg drop-shadow-sm duration-500"
               >
                 <li class="w-full">
                   <a href="#" class="block h-full w-full">Aranżacja ogrodu</a>
@@ -218,33 +225,22 @@
               </ul>
             </li>
             <li>
-              <a
-                href="#about-section"
-                class="w-full"
-                >O firmie</a
-              >
+              <a href="#about-section" class="w-full">O firmie</a>
             </li>
             <li>
-              <a
-                href="#masonry-section"
-                class="w-full"
-                >Realizacje</a
-              >
+              <a href="#masonry-section" class="w-full">Realizacje</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="w-full"
-                >Kontakt</a
-              >
+              <a href="#" class="w-full">Kontakt</a>
             </li>
-          </div>
+          </ul>
+        </div>
       </nav>
     </section>
     <!-- ==== INTRO SECTION ==== -->
     <section class="relative flex w-full">
       <div
-        class="slides slide-right absolute left-0 top-[81px] flex h-[720px] w-full flex-row-reverse transition-all duration-500 md:top-[95px] lg:top-[99px]"
+        class="slides slide-right absolute left-0 top-[88px] flex h-[560px] w-full flex-row-reverse transition-all duration-500 sm:top-[80px] sm:h-[720px] md:top-[95px] lg:top-[99px]"
       >
         <div
           class="hidden h-full w-1/2 bg-[url('/public/images/slider_1.png')] bg-cover bg-no-repeat sm:block"
@@ -253,17 +249,17 @@
           class="sm:bg-darkbeige h-full max-w-[768px] bg-[url('/public/images/slider_1.png')] sm:w-1/2 sm:bg-none"
         >
           <div
-            class="bg-darkbeige flex h-full flex-col justify-center bg-opacity-[0.85] px-12 pb-24 pt-16 sm:block sm:bg-transparent sm:pb-16 md:px-20 md:py-24 lg:pr-36"
+            class="bg-darkbeige flex h-full flex-col justify-center bg-opacity-[0.85] px-12 pb-16 pt-0 sm:block sm:bg-transparent sm:pt-16 md:px-20 md:py-24 lg:pr-36"
           >
             <h1
-              class="font-monts mb-12 text-center text-4xl font-medium leading-[115%] md:text-left xl:text-5xl 2xl:text-6xl"
+              class="font-monts mb-4 text-center text-2xl font-medium leading-[115%] sm:mb-12 sm:text-4xl md:text-left xl:text-5xl 2xl:text-6xl"
             >
               Nowoczesna aranżacja
               <br />
               Twojego ogrodu
             </h1>
             <h5
-              class="text-md mb-12 text-center leading-[165%] md:text-left xl:text-[17px] 2xl:pr-12"
+              class="text-md mb-10 text-center leading-[165%] md:text-left xl:text-[17px] 2xl:pr-12"
             >
               Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy
               kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.
@@ -298,27 +294,39 @@
           </div>
         </div>
       </div>
+      <!-- ==== SECOND SLIDE ==== -->
       <div
-        class="slides invisible absolute left-0 top-[99px] flex h-[720px] w-full flex-row-reverse transition-all duration-500"
+        class="slides slide-right absolute left-0 top-[88px] flex h-[560px] w-full flex-row-reverse transition-all duration-500 sm:top-[80px] sm:h-[720px] md:top-[95px] lg:top-[99px]"
       >
         <div
-          class="h-full w-1/2 bg-[url('/public/images/slider_2.jpg')] bg-cover bg-no-repeat"
+          class="hidden h-full w-1/2 bg-[url('/public/images/slider_2.jpg')] bg-cover bg-no-repeat sm:block"
         ></div>
-        <div class="bg-darkbeige h-full w-1/2 max-w-[768px]">
-          <div class="py-16 pl-20 pr-32">
-            <h3 class="font-monts mb-12 font-medium leading-[115%] xl:text-5xl 2xl:text-6xl">
+        <div
+          class="sm:bg-darkbeige h-full max-w-[768px] bg-[url('/public/images/slider_2.jpg')] sm:w-1/2 sm:bg-none"
+        >
+          <div
+            class="bg-darkbeige flex h-full flex-col justify-center bg-opacity-[0.85] px-12 pb-16 pt-0 sm:block sm:bg-transparent sm:pt-16 md:px-20 md:py-24 lg:pr-16"
+          >
+            <h3
+              class="font-monts mb-4 text-center text-2xl font-medium leading-[115%] sm:mb-12 sm:text-4xl md:text-left xl:text-5xl 2xl:text-6xl"
+            >
               Magiczna przestrzeń przez Cztery Pory Roku
             </h3>
-            <h5 class="mb-12 pr-8 text-[17px] leading-[165%]">
+            <h5
+              class="text-md mb-10 text-center leading-[165%] md:text-left xl:text-[17px] 2xl:pr-12"
+            >
               Nasze ogrody zimowe to prawdziwa poezja natury nawet w najbardziej surowych warunkach.
               Tworzymy kompozycje roślinne, które zachwycają swoją urodą nie tylko latem, ale także
-              zimą, kiedy przyroda spoczywa pod warstwą śniegu. Dzięki starannie dobranym roślinom,
-              elementom architektury ogrodowej i oświetleniu, nasze ogrody zimowe stwarzają magiczny
-              klimat, który umożliwia cieszenie się pięknem ogrodu przez cały rok.
+              zimą, kiedy przyroda spoczywa pod warstwą śniegu.
+              <p class="hidden lg:inline">
+                Dzięki starannie dobranym roślinom, elementom architektury ogrodowej i oświetleniu,
+                nasze ogrody zimowe stwarzają magiczny klimat, który umożliwia cieszenie się pięknem
+                ogrodu przez cały rok.
+              </p>
             </h5>
-            <div class="flex w-full gap-x-10">
+            <div class="flex w-full justify-center md:items-start">
               <button
-                class="bg-forestgreen hover:from-forestgreen w-56 rounded-full py-3 font-light text-white transition-all hover:-translate-y-1 hover:bg-gradient-to-t hover:to-green-800 hover:drop-shadow-xl"
+                class="bg-forestgreen hover:from-forestgreen w-full rounded-full px-6 py-3 font-light text-white transition-all hover:-translate-y-1 hover:bg-gradient-to-t hover:to-green-800 hover:drop-shadow-xl sm:w-auto lg:w-64 2xl:w-auto"
               >
                 Dowiedz się więcej
               </button>
@@ -326,8 +334,10 @@
           </div>
         </div>
       </div>
-      <div
-        class="slides invisible absolute left-0 top-[99px] flex h-[720px] w-full flex-row-reverse transition-all duration-500"
+
+      <!-- ==== THIRD SLIDE ==== -->
+      <!-- <div
+        class="slides slide-right absolute left-0 top-[88px] flex h-[560px] w-full flex-row-reverse transition-all duration-500 sm:top-[80px] sm:h-[720px] md:top-[95px] lg:top-[99px]"
       >
         <div
           class="h-full w-1/2 bg-[url('/public/images/slider_3.jpg')] bg-cover bg-no-repeat"
@@ -353,11 +363,50 @@
             </div>
           </div>
         </div>
+      </div> -->
+      <div
+        class="slides slide-right absolute left-0 top-[88px] flex h-[560px] w-full flex-row-reverse transition-all duration-500 sm:top-[80px] sm:h-[720px] md:top-[95px] lg:top-[99px]"
+      >
+        <div
+          class="hidden h-full w-1/2 bg-[url('/public/images/slider_3.jpg')] bg-cover bg-no-repeat sm:block"
+        ></div>
+        <div
+          class="sm:bg-darkbeige h-full max-w-[768px] bg-[url('/public/images/slider_3.jpg')] sm:w-1/2 sm:bg-none"
+        >
+          <div
+            class="bg-darkbeige flex h-full flex-col justify-center bg-opacity-[0.85] px-12 pb-16 pt-0 sm:block sm:bg-transparent sm:pt-16 md:px-20 md:py-24 lg:pr-16"
+          >
+            <h3
+              class="font-monts mb-4 text-center text-2xl font-medium leading-[115%] sm:mb-12 sm:text-4xl md:text-left xl:text-5xl 2xl:text-6xl"
+            >
+              Żniwa z Twojego ogrodu
+            </h3>
+            <h5
+              class="text-md mb-10 text-center leading-[165%] md:text-left xl:text-[17px] 2xl:pr-12"
+            >
+              Jeśli jesteś miłośnikiem świeżych warzyw i ziół, nasze ogrody warzywne są dla Ciebie
+              stworzone. Projektujemy ogrody, które nie tylko zachwycają estetyką, ale także
+              dostarczają świeżych, organicznych produktów prosto z Twojego podwórka. Nasze pomysły
+              łączą funkcjonalność, ekologię i piękno
+              <p class="hidden sm:inline">
+                , umożliwiając Ci czerpanie radości zarówno z uprawy, jak i spożywania własnych
+                plonów.
+              </p>
+            </h5>
+            <div class="flex w-full justify-center md:items-start">
+              <button
+                class="bg-forestgreen hover:from-forestgreen w-full rounded-full px-6 py-3 font-light text-white transition-all hover:-translate-y-1 hover:bg-gradient-to-t hover:to-green-800 hover:drop-shadow-xl sm:w-auto lg:w-64 2xl:w-auto"
+              >
+                Dowiedz się więcej
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- ==== OFFER SECTION ==== -->
     <section
-      class="offer-section bg-lightbeige relative mx-auto mt-[801px] max-w-[1536px] translate-y-[100%] pb-32 opacity-0 delay-500 duration-1000 md:mt-[815px] lg:mt-[819px]"
+      class="offer-section bg-lightbeige relative mx-auto mt-[648px] max-w-[1536px] translate-y-[100%] pb-32 opacity-0 delay-500 duration-1000 md:mt-[815px] lg:mt-[819px]"
     >
       <!-- ==== SLIDER NAV ====-->
       <div
@@ -510,9 +559,7 @@
       </div>
     </section>
     <!-- ==== ABOUT SECTION ==== -->
-    <section
-      class="about-section relative z-[1] translate-x-[-100%] delay-[2000ms] duration-1000"
-    >
+    <section class="about-section relative z-[1] translate-x-[-100%] delay-[2000ms] duration-1000">
       <div>
         <div class="flex">
           <div class="slide-1 bg-gradient-to-lb flex h-[720px] w-full">
@@ -849,7 +896,7 @@
       })
     </script>
     <script type="text/javascript">
-      $(document).ready(function(){
+      $(document).ready(function () {
         $('.open-menu').click(function () {
           $('.open-menu').toggleClass('hidden')
           $('.close-menu').toggleClass('hidden')
