@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
@@ -11,61 +11,44 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="/public/head/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/public/head/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/public/head/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/head/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/head/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/head/favicon-16x16.png" />
     <link rel="manifest" href="/public/head/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/public/head/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
+    <link rel="mask-icon" href="/public/head/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body class="font-inter overflow-x-hidden">
     <!-- ==== NAVBAR ==== -->
     <section
-      class="bg-white flex justify-center items-center py-5 w-full fixed z-10 drop-shadow-md"
+      class="navbar z-10 flex w-full max-w-[100vw] items-center justify-center bg-white py-2 opacity-0 drop-shadow-md transition-all duration-[2000ms] fixed sm:py-5"
     >
       <nav
-        class="text-almostblack max-w-[1536px] w-full py-2 px-16 flex justify-between items-center"
+        class="text-almostblack flex w-full max-w-[1536px] flex-col items-center justify-between sm:flex-row sm:px-4 md:px-6 md:py-2 lg:px-16"
       >
-        <div class="flex items-center hover-underline underline-logo">
+        <div class="lg:hover-underline lg:underline-logo flex items-center">
           <a href="#">
             <img
-              class="scale-125 py-2"
+              class="mb-1 ml-2 scale-110 py-2 sm:mb-0 lg:scale-125"
               src="public\images\giarddesign.svg"
               alt="Logo Strony"
           /></a>
         </div>
-        <ul class="flex space-x-12 items-center">
-          <li class="relative">
+        <!-- ==== +640PX NAV ==== -->
+        <ul class="hidden items-center space-x-2 sm:flex sm:space-x-4 lg:space-x-12">
+          <li class="sm:order-0 relative order-1">
             <div
-              class="offer flex items-center gap-2 px-6 py-3 rounded-full hover:text-gray-200 hover:bg-almostblack cursor-pointer"
+              class="offer hover:bg-almostblack flex cursor-pointer items-center gap-x-1 rounded-full px-3 py-2 leading-none hover:text-gray-200 sm:gap-x-2 sm:px-4 sm:py-2 lg:px-6 lg:py-3"
             >
-              <p>Oferta</p>
+              Oferta
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="dropdown-icon active w-5 h-5 transition-all duration-500"
+                class="dropdown-icon active h-4 w-4 transition-all duration-500 sm:h-5 sm:w-5"
               >
                 <path
                   stroke-linecap="round"
@@ -75,65 +58,55 @@
               </svg>
             </div>
             <ul
-              class="-z-[1] offer-list text-center flex flex-col justify-center pb-1 align-middle absolute left-1/2 translate-x-[-50%] translate-y-[-100%] w-[220px] scale-0 rounded-b-xl bg-white drop-shadow-sm duration-500"
+              class="offer-list absolute left-1/2 -z-[1] flex w-[220px] translate-x-[-50%] translate-y-[-100%] scale-0 flex-col justify-center rounded-b-xl bg-white pb-1 text-center align-middle drop-shadow-sm duration-500"
             >
               <li class="w-full hover:font-bold">
-                <a href="#" class="block w-full h-full px-5 py-2"
-                  >Aranżacja ogrodu</a
-                >
+                <a href="#" class="block h-full w-full px-5 py-2">Aranżacja ogrodu</a>
               </li>
               <li class="w-full hover:font-bold">
-                <a href="#" class="block w-full h-full px-5 py-2"
-                  >Tarasy i balkony</a
-                >
+                <a href="#" class="block h-full w-full px-5 py-2">Tarasy i balkony</a>
               </li>
               <li class="w-full hover:font-bold">
-                <a href="#" class="block w-full h-full px-5 py-2"
-                  >Ogrody zimowe</a
-                >
+                <a href="#" class="block h-full w-full px-5 py-2">Ogrody zimowe</a>
               </li>
               <li class="w-full hover:font-bold">
-                <a href="#" class="block w-full h-full px-5 py-2"
-                  >Ogrody warzywne</a
-                >
+                <a href="#" class="block h-full w-full px-5 py-2">Ogrody warzywne</a>
               </li>
               <li class="w-full hover:font-bold">
-                <a href="#" class="block w-full h-full px-5 py-2"
-                  >Pielęgnacja trawnika</a
-                >
+                <a href="#" class="block h-full w-full px-5 py-2">Pielęgnacja trawnika</a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="order-0 sm:order-1">
             <a
               href="#about-section"
-              class="px-6 py-3 rounded-full hover:text-gray-300 hover:bg-almostblack transition-all"
+              class="hover:bg-almostblack rounded-full px-3 py-2 transition-all hover:text-gray-300 lg:px-6 lg:py-3"
               >O firmie</a
             >
           </li>
-          <li>
+          <li class="order-2 sm:order-2">
             <a
               href="#masonry-section"
-              class="px-6 py-3 rounded-full hover:text-gray-200 hover:bg-almostblack transition-all"
+              class="hover:bg-almostblack rounded-full px-3 py-2 transition-all hover:text-gray-200 lg:px-6 lg:py-3"
               >Realizacje</a
             >
           </li>
-          <li>
+          <li class="order-3 sm:order-3">
             <a
               href="#"
-              class="px-6 py-3 rounded-full hover:text-gray-200 hover:bg-almostblack transition-all"
+              class="hover:bg-almostblack rounded-full px-3 py-2 transition-all hover:text-gray-200 lg:px-6 lg:py-3"
               >Kontakt</a
             >
           </li>
-          <li>
+          <li class="order-last">
             <div
-              class="search hover:bg-almostblack hover:text-gray-200 cursor-pointer p-2 rounded-full transition-all hover:scale-110"
+              class="search hover:bg-almostblack hidden cursor-pointer rounded-full p-2 transition-all hover:scale-110 hover:text-gray-200 sm:block"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="w-6 h-6 rounded-full"
+                class="h-6 w-6 rounded-full"
               >
                 <path
                   fill-rule="evenodd"
@@ -143,20 +116,20 @@
               </svg>
             </div>
             <div
-              class="search-input scale-0 absolute flex p-1 translate-x-[-40%] bg-white drop-shadow-2xl rounded-full gap-x-2 px-3 transition-all"
+              class="search-input align-center absolute flex scale-0 justify-center gap-x-2 rounded-full bg-white p-1 px-3 drop-shadow-2xl transition-all sm:translate-x-[-95%] sm:translate-y-[70%] md:translate-x-[-90%] lg:translate-x-[-80%] lg:translate-y-[100%]"
             >
               <input
                 placeholder="Szukaj..."
-                class="rounded-full px-4 py-1 border-2 border-almostblack border-opacity-70 border-solid"
+                class="border-almostblack rounded-full border-2 border-solid border-opacity-70 px-4 py-1"
               />
               <div
-                class="hover:bg-almostblack hover:text-gray-200 cursor-pointer p-2 rounded-full transition-all"
+                class="hover:bg-almostblack cursor-pointer rounded-full p-2 transition-all hover:text-gray-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="w-6 h-6 rounded-full cursor-pointer"
+                  class="h-6 w-6 cursor-pointer rounded-full"
                 >
                   <path
                     fill-rule="evenodd"
@@ -166,7 +139,7 @@
                 </svg>
               </div>
               <div
-                class="close-search hover:bg-almostblack hover:text-gray-200 cursor-pointer p-2 rounded-full transition-all"
+                class="close-search hover:bg-almostblack cursor-pointer rounded-full p-2 transition-all hover:text-gray-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -174,56 +147,136 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6 cursor-pointer"
+                  class="h-6 w-6 cursor-pointer"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </div>
             </div>
           </li>
         </ul>
+        <!-- ==== MOBILE NAV ==== -->
+        <button class="sm:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="open-menu h-8 w-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close-menu w-8 h-8 hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>          
+        </button>
+        <div class="mobile-menu w-full hidden sm:hidden text-xl font-monts">
+          <ul class="flex flex-col items-center space-y-4 w-full">
+            <li class="relative order-1 w-full">
+              <div
+                class="offer flex justify-center mt-2 py-2 cursor-pointer items-center gap-x-1 w-full leading-none"
+              >
+                Oferta
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="dropdown-icon active h-4 w-4 transition-all duration-500 sm:h-5 sm:w-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <ul
+                class="text-lg offer-list py-3 absolute left-1/2 -z-[1] flex gap-y-4 w-full flex-col justify-center bg-white text-center align-middle drop-shadow-sm duration-500"
+              >
+                <li class="w-full">
+                  <a href="#" class="block h-full w-full">Aranżacja ogrodu</a>
+                </li>
+                <li class="w-full">
+                  <a href="#" class="block h-full w-full">Tarasy i balkony</a>
+                </li>
+                <li class="w-full">
+                  <a href="#" class="block h-full w-full">Ogrody zimowe</a>
+                </li>
+                <li class="w-full">
+                  <a href="#" class="block h-full w-full">Ogrody warzywne</a>
+                </li>
+                <li class="w-full">
+                  <a href="#" class="block h-full w-full">Pielęgnacja trawnika</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#about-section"
+                class="w-full"
+                >O firmie</a
+              >
+            </li>
+            <li>
+              <a
+                href="#masonry-section"
+                class="w-full"
+                >Realizacje</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="w-full"
+                >Kontakt</a
+              >
+            </li>
+          </div>
       </nav>
     </section>
     <!-- ==== INTRO SECTION ==== -->
-    <section class="flex w-full relative">
+    <section class="relative flex w-full">
       <div
-        class="slides absolute left-0 top-[103px] flex flex-row-reverse h-[720px] w-full transition-all duration-500"
+        class="slides slide-right absolute left-0 top-[81px] flex h-[720px] w-full flex-row-reverse transition-all duration-500 md:top-[95px] lg:top-[99px]"
       >
         <div
-          class="w-1/2 h-full bg-[url('/public/images/slider_1.png')] bg-cover bg-no-repeat hidden sm:block"
+          class="hidden h-full w-1/2 bg-[url('/public/images/slider_1.png')] bg-cover bg-no-repeat sm:block"
         ></div>
         <div
-          class="sm:w-1/2 max-w-[768px] h-full bg-[url('/public/images/slider_1.png')] sm:bg-darkbeige sm:bg-none"
+          class="sm:bg-darkbeige h-full max-w-[768px] bg-[url('/public/images/slider_1.png')] sm:w-1/2 sm:bg-none"
         >
           <div
-            class="md:py-24 md:px-20 lg:pr-36 pt-16 pb-24 sm:pb-16 px-12 h-full bg-darkbeige bg-opacity-[0.85] sm:bg-transparent flex flex-col justify-center sm:block"
+            class="bg-darkbeige flex h-full flex-col justify-center bg-opacity-[0.85] px-12 pb-24 pt-16 sm:block sm:bg-transparent sm:pb-16 md:px-20 md:py-24 lg:pr-36"
           >
             <h1
-              class="text-center md:text-left font-monts font-medium leading-[115%] mb-12 2xl:text-6xl xl:text-5xl text-4xl"
+              class="font-monts mb-12 text-center text-4xl font-medium leading-[115%] md:text-left xl:text-5xl 2xl:text-6xl"
             >
-              Nowoczesna aranżacja <br />
+              Nowoczesna aranżacja
+              <br />
               Twojego ogrodu
             </h1>
             <h5
-              class="text-center md:text-left leading-[165%] mb-12 2xl:pr-12 text-md xl:text-[17px]"
+              class="text-md mb-12 text-center leading-[165%] md:text-left xl:text-[17px] 2xl:pr-12"
             >
-              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
-              podejściem do każdego projektu.
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy
+              kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.
             </h5>
-            <div class="flex w-full gap-y-5 flex-col 2xl:flex-row 2xl:gap-x-10">
+            <div class="flex w-full flex-col gap-y-5 2xl:flex-row 2xl:gap-x-10">
               <button
-                class="sm:w-auto lg:w-64 px-6 py-3 bg-forestgreen hover:bg-gradient-to-t hover:from-forestgreen hover:to-green-800 font-light text-white hover:-translate-y-1 hover:drop-shadow-xl rounded-full transition-all 2xl:w-auto"
+                class="bg-forestgreen hover:from-forestgreen rounded-full px-6 py-3 font-light text-white transition-all hover:-translate-y-1 hover:bg-gradient-to-t hover:to-green-800 hover:drop-shadow-xl sm:w-auto lg:w-64 2xl:w-auto"
               >
                 Skontaktuj się z nami
               </button>
               <a href="#masonry-section">
                 <button
-                  class="w-full lg:w-64 flex items-center justify-center gap-x-2 py-3 group bg-transparent lg:hover:rotate-3 hover:bg-white hover:bg-opacity-20 text-forestgreen border-solid border-2 border-forestgreen transition-all rounded-full"
+                  class="text-forestgreen border-forestgreen group flex w-full items-center justify-center gap-x-2 rounded-full border-2 border-solid bg-transparent py-3 transition-all hover:bg-white hover:bg-opacity-20 lg:w-64 lg:hover:rotate-3"
                 >
                   Zobacz nasze realizacje
                   <svg
@@ -232,7 +285,7 @@
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="w-6 h-6 hidden lg:block"
+                    class="hidden h-6 w-6 lg:block"
                   >
                     <path
                       stroke-linecap="round"
@@ -246,30 +299,26 @@
         </div>
       </div>
       <div
-        class="slides absolute left-0 top-[103px] invisible flex flex-row-reverse h-[720px] w-full transition-all duration-500"
+        class="slides invisible absolute left-0 top-[99px] flex h-[720px] w-full flex-row-reverse transition-all duration-500"
       >
         <div
-          class="w-1/2 h-full bg-[url('/public/images/slider_2.jpg')] bg-cover bg-no-repeat"
+          class="h-full w-1/2 bg-[url('/public/images/slider_2.jpg')] bg-cover bg-no-repeat"
         ></div>
-        <div class="w-1/2 max-w-[768px] h-full bg-darkbeige">
+        <div class="bg-darkbeige h-full w-1/2 max-w-[768px]">
           <div class="py-16 pl-20 pr-32">
-            <h3
-              class="2xl:text-6xl xl:text-5xl font-monts font-medium leading-[115%] mb-12"
-            >
+            <h3 class="font-monts mb-12 font-medium leading-[115%] xl:text-5xl 2xl:text-6xl">
               Magiczna przestrzeń przez Cztery Pory Roku
             </h3>
-            <h5 class="text-[17px] leading-[165%] mb-12 pr-8">
-              Nasze ogrody zimowe to prawdziwa poezja natury nawet w najbardziej
-              surowych warunkach. Tworzymy kompozycje roślinne, które zachwycają
-              swoją urodą nie tylko latem, ale także zimą, kiedy przyroda
-              spoczywa pod warstwą śniegu. Dzięki starannie dobranym roślinom,
-              elementom architektury ogrodowej i oświetleniu, nasze ogrody
-              zimowe stwarzają magiczny klimat, który umożliwia cieszenie się
-              pięknem ogrodu przez cały rok.
+            <h5 class="mb-12 pr-8 text-[17px] leading-[165%]">
+              Nasze ogrody zimowe to prawdziwa poezja natury nawet w najbardziej surowych warunkach.
+              Tworzymy kompozycje roślinne, które zachwycają swoją urodą nie tylko latem, ale także
+              zimą, kiedy przyroda spoczywa pod warstwą śniegu. Dzięki starannie dobranym roślinom,
+              elementom architektury ogrodowej i oświetleniu, nasze ogrody zimowe stwarzają magiczny
+              klimat, który umożliwia cieszenie się pięknem ogrodu przez cały rok.
             </h5>
             <div class="flex w-full gap-x-10">
               <button
-                class="w-56 py-3 bg-forestgreen hover:bg-gradient-to-t hover:from-forestgreen hover:to-green-800 font-light text-white hover:-translate-y-1 hover:drop-shadow-xl rounded-full transition-all"
+                class="bg-forestgreen hover:from-forestgreen w-56 rounded-full py-3 font-light text-white transition-all hover:-translate-y-1 hover:bg-gradient-to-t hover:to-green-800 hover:drop-shadow-xl"
               >
                 Dowiedz się więcej
               </button>
@@ -278,29 +327,26 @@
         </div>
       </div>
       <div
-        class="slides absolute left-0 top-[103px] invisible flex flex-row-reverse h-[720px] w-full transition-all duration-500"
+        class="slides invisible absolute left-0 top-[99px] flex h-[720px] w-full flex-row-reverse transition-all duration-500"
       >
         <div
-          class="w-1/2 h-full bg-[url('/public/images/slider_3.jpg')] bg-cover bg-no-repeat"
+          class="h-full w-1/2 bg-[url('/public/images/slider_3.jpg')] bg-cover bg-no-repeat"
         ></div>
-        <div class="w-1/2 max-w-[768px] h-full bg-darkbeige">
+        <div class="bg-darkbeige h-full w-1/2 max-w-[768px]">
           <div class="py-20 pl-20 pr-36">
-            <h3
-              class="2xl:text-6xl xl:text-5xl font-monts font-medium leading-[115%] mb-12"
-            >
+            <h3 class="font-monts mb-12 font-medium leading-[115%] xl:text-5xl 2xl:text-6xl">
               Żniwa z Twojego ogrodu
             </h3>
-            <h5 class="text-[17px] leading-[165%] mb-12 pr-12">
-              Jeśli jesteś miłośnikiem świeżych warzyw i ziół, nasze ogrody
-              warzywne są dla Ciebie stworzone. Projektujemy ogrody, które nie
-              tylko zachwycają estetyką, ale także dostarczają świeżych,
-              organicznych produktów prosto z Twojego podwórka. Nasze pomysły
-              łączą funkcjonalność, ekologię i piękno, umożliwiając Ci czerpanie
-              radości zarówno z uprawy, jak i spożywania własnych plonów.
+            <h5 class="mb-12 pr-12 text-[17px] leading-[165%]">
+              Jeśli jesteś miłośnikiem świeżych warzyw i ziół, nasze ogrody warzywne są dla Ciebie
+              stworzone. Projektujemy ogrody, które nie tylko zachwycają estetyką, ale także
+              dostarczają świeżych, organicznych produktów prosto z Twojego podwórka. Nasze pomysły
+              łączą funkcjonalność, ekologię i piękno, umożliwiając Ci czerpanie radości zarówno z
+              uprawy, jak i spożywania własnych plonów.
             </h5>
             <div class="flex w-full gap-x-10">
               <button
-                class="w-56 py-3 bg-forestgreen hover:bg-gradient-to-t hover:from-forestgreen hover:to-green-800 font-light text-white hover:-translate-y-1 hover:drop-shadow-xl rounded-full transition-all"
+                class="bg-forestgreen hover:from-forestgreen w-56 rounded-full py-3 font-light text-white transition-all hover:-translate-y-1 hover:bg-gradient-to-t hover:to-green-800 hover:drop-shadow-xl"
               >
                 Dowiedz się więcej
               </button>
@@ -311,15 +357,15 @@
     </section>
     <!-- ==== OFFER SECTION ==== -->
     <section
-      class="max-w-[1536px] mx-auto mt-[823px] pb-32 bg-lightbeige relative"
+      class="offer-section bg-lightbeige relative mx-auto mt-[801px] max-w-[1536px] translate-y-[100%] pb-32 opacity-0 delay-500 duration-1000 md:mt-[815px] lg:mt-[819px]"
     >
       <!-- ==== SLIDER NAV ====-->
       <div
-        class="slider-nav flex justify-center bg-lightbeige items-center absolute right-0 translate-y-[-100%] rounded-tl-lg 2xl:rounded-t-lg overflow-hidden drop-north-shadow"
+        class="slider-nav bg-lightbeige drop-north-shadow absolute right-0 flex translate-y-[-100%] items-center justify-center overflow-hidden rounded-tl-lg 2xl:rounded-t-lg"
       >
         <button
           onClick="plusDivs(-1)"
-          class="flex items-center justify-center w-20 h-20 hover:bg-forestgreen hover:text-white transition-all"
+          class="hover:bg-forestgreen flex h-20 w-20 items-center justify-center transition-all hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -327,7 +373,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-7 h-7"
+            class="h-7 w-7"
           >
             <path
               stroke-linecap="round"
@@ -338,7 +384,7 @@
         </button>
         <button
           onClick="plusDivs(+1)"
-          class="flex items-center justify-center w-20 h-20 hover:bg-forestgreen hover:text-white transition-all"
+          class="hover:bg-forestgreen flex h-20 w-20 items-center justify-center transition-all hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -346,7 +392,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-7 h-7"
+            class="h-7 w-7"
           >
             <path
               stroke-linecap="round"
@@ -357,37 +403,32 @@
         </button>
       </div>
       <!-- ==== OFFER HEADER ====-->
-      <div class="max-w-3xl ml-64 pt-28">
+      <div class="ml-64 max-w-3xl pt-28">
         <h3 class="text-md text-forestgreen">Oferta</h3>
-        <h5 class="mt-5 text-5xl font-monts font-medium">
-          Działamy <i class="font-inter">kompleksowo</i>
+        <h5 class="font-monts mt-5 text-5xl font-medium">
+          Działamy
+          <i class="font-inter">kompleksowo</i>
         </h5>
-        <p class="mt-8 text-md">
-          Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
-          nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla
-          Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
-          etapie posłużymy radą i wieloletnim doświadczeniem.
+        <p class="text-md mt-8">
+          Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody
+          przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i
+          wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
         </p>
       </div>
       <!-- ==== GRID COLUMNS ====-->
-      <div class="mt-20 px-24 grid grid-cols-3 gap-16">
-        <div
-          class="w-full h-full aspect-square bg-white rounded-3xl p-12 flex flex-col"
-        >
+      <div class="mt-20 grid grid-cols-3 gap-16 px-24">
+        <div class="flex aspect-square h-full w-full flex-col rounded-3xl bg-white p-12">
           <div
-            class="bg-darkbeige ml-1 mt-1 w-10 h-10 animate-ping time-3000 rounded-full absolute"
+            class="bg-darkbeige time-3000 absolute ml-1 mt-1 h-10 w-10 animate-ping rounded-full"
           ></div>
-          <img
-            src="/public/images/offer_icon_1.svg"
-            class="w-12 h-12 absolute"
-          />
-          <h6 class="mt-[72px] text-3xl font-monts font-medium">Projekty</h6>
+          <img src="/public/images/offer_icon_1.svg" class="absolute h-12 w-12" />
+          <h6 class="font-monts mt-[72px] text-3xl font-medium">Projekty</h6>
           <p class="mt-3">
-            Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
-            wykorzystaniem istniejącej przestrzeni.
+            Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
+            przestrzeni.
           </p>
           <a
-            class="mt-auto mr-auto group gap-x-2 font-medium flex items-center pb-1 pr-1 border-b-[1px] text-forestgreen border-solid border-forestgreen hover:pl-1 hover:pr-0 transition-all"
+            class="text-forestgreen border-forestgreen group mr-auto mt-auto flex items-center gap-x-2 border-b-[1px] border-solid pb-1 pr-1 font-medium transition-all hover:pl-1 hover:pr-0"
             href=""
             >Dowiedz się więcej
             <svg
@@ -396,7 +437,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6 group-hover:translate-x-1 transition-all"
+              class="h-6 w-6 transition-all group-hover:translate-x-1"
             >
               <path
                 stroke-linecap="round"
@@ -406,25 +447,18 @@
             </svg>
           </a>
         </div>
-        <div
-          class="w-full h-full aspect-square bg-white rounded-3xl p-12 flex flex-col"
-        >
+        <div class="flex aspect-square h-full w-full flex-col rounded-3xl bg-white p-12">
           <div
-            class="bg-darkbeige ml-1 mt-1 w-10 h-10 animate-ping time-3000 rounded-full absolute"
+            class="bg-darkbeige time-3000 absolute ml-1 mt-1 h-10 w-10 animate-ping rounded-full"
           ></div>
-          <img
-            src="/public/images/offer_icon_2.svg"
-            class="w-12 h-12 absolute"
-          />
-          <h6 class="mt-[72px] text-3xl font-monts font-medium">
-            Wizualizacje
-          </h6>
+          <img src="/public/images/offer_icon_2.svg" class="absolute h-12 w-12" />
+          <h6 class="font-monts mt-[72px] text-3xl font-medium">Wizualizacje</h6>
           <p class="mt-3">
-            Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
-            animowanego w technologii 3D.
+            Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w
+            technologii 3D.
           </p>
           <a
-            class="mt-auto mr-auto group gap-x-2 font-medium flex items-center pb-1 pr-1 border-b-[1px] text-forestgreen border-solid border-forestgreen hover:pl-1 hover:pr-0 transition-all"
+            class="text-forestgreen border-forestgreen group mr-auto mt-auto flex items-center gap-x-2 border-b-[1px] border-solid pb-1 pr-1 font-medium transition-all hover:pl-1 hover:pr-0"
             href=""
             >Dowiedz się więcej
             <svg
@@ -433,7 +467,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6 group-hover:translate-x-1 transition-all"
+              class="h-6 w-6 transition-all group-hover:translate-x-1"
             >
               <path
                 stroke-linecap="round"
@@ -443,23 +477,18 @@
             </svg>
           </a>
         </div>
-        <div
-          class="w-full h-full aspect-square bg-white rounded-3xl p-12 flex flex-col"
-        >
+        <div class="flex aspect-square h-full w-full flex-col rounded-3xl bg-white p-12">
           <div
-            class="bg-darkbeige ml-1 mt-1 w-10 h-10 animate-ping time-3000 rounded-full absolute"
+            class="bg-darkbeige time-3000 absolute ml-1 mt-1 h-10 w-10 animate-ping rounded-full"
           ></div>
-          <img
-            src="/public/images/offer_icon_3.svg"
-            class="w-12 h-12 absolute"
-          />
-          <h6 class="mt-[72px] text-3xl font-monts font-medium">Realizacje</h6>
+          <img src="/public/images/offer_icon_3.svg" class="absolute h-12 w-12" />
+          <h6 class="font-monts mt-[72px] text-3xl font-medium">Realizacje</h6>
           <p class="mt-3">
-            Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
-            zaawansowanych technologii.
+            Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych
+            technologii.
           </p>
           <a
-            class="mt-auto mr-auto group gap-x-2 font-medium flex items-center pb-1 pr-1 border-b-[1px] text-forestgreen border-solid border-forestgreen hover:pl-1 hover:pr-0 transition-all"
+            class="text-forestgreen border-forestgreen group mr-auto mt-auto flex items-center gap-x-2 border-b-[1px] border-solid pb-1 pr-1 font-medium transition-all hover:pl-1 hover:pr-0"
             href=""
             >Zobacz nasze realizacje
             <svg
@@ -468,7 +497,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6 group-hover:translate-x-1 transition-all"
+              class="h-6 w-6 transition-all group-hover:translate-x-1"
             >
               <path
                 stroke-linecap="round"
@@ -481,31 +510,32 @@
       </div>
     </section>
     <!-- ==== ABOUT SECTION ==== -->
-    <section id="about-section">
+    <section
+      class="about-section relative z-[1] translate-x-[-100%] delay-[2000ms] duration-1000"
+    >
       <div>
         <div class="flex">
-          <div class="slide-1 flex h-[720px] w-full bg-gradient-to-lb">
+          <div class="slide-1 bg-gradient-to-lb flex h-[720px] w-full">
             <div
-              class="w-1/2 h-full bg-[url('/public/images/third_section_garden.png')] bg-cover bg-no-repeat"
+              class="h-full w-1/2 bg-[url('/public/images/third_section_garden.png')] bg-cover bg-no-repeat"
             ></div>
             <div
-              class="w-1/2 max-w-[768px] h-full bg-forestgreen flex flex-col justify-center pl-40 pr-32 text-lightbeige"
+              class="bg-forestgreen text-lightbeige flex h-full w-1/2 max-w-[768px] flex-col justify-center pl-40 pr-32"
             >
               <h3 class="text-md">O firmie</h3>
-              <h5 class="mt-5 text-5xl font-monts font-medium leading-[120%]">
+              <h5 class="font-monts mt-5 text-5xl font-medium leading-[120%]">
                 Tworzymy<br />
                 z pasją
               </h5>
-              <p class="mt-10 text-md">
-                Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
-                wykwalifikowani projektanci oraz architekci, których zadaniem
-                jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
-                specjalizacja to przestrzenie nowoczesne, które charakteryzuje
-                minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+              <p class="text-md mt-10">
+                Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani
+                projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb
+                każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które
+                charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody
                 małoobsługowe, dostosowane do współczesnego trybu życia.
               </p>
               <button
-                class="flex w-64 mt-16 items-center justify-center gap-x-2 py-3 group bg-transparent hover:rotate-3 hover:pl-5 hover:pr-1hover:drop-shadow-xl hover:bg-lightbeige hover:bg-opacity-10 text-lightbeige border-solid border-2 border-lightbeige transition-all rounded-full hover:"
+                class="hover:bg-lightbeige text-lightbeige border-lightbeige hover:group mt-16 flex w-64 items-center justify-center gap-x-2 rounded-full border-2 border-solid bg-transparent py-3 transition-all hover:rotate-3 hover:bg-opacity-10 hover:pl-5 hover:pr-1 hover:drop-shadow-xl"
               >
                 Poznaj nas bliżej
                 <svg
@@ -514,7 +544,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6 group-hover:translate-x-1 transition-all"
+                  class="h-6 w-6 transition-all group-hover:translate-x-1"
                 >
                   <path
                     stroke-linecap="round"
@@ -529,94 +559,92 @@
       </div>
     </section>
     <!-- ==== MASONRY SECTION ====-->
-    <section
-      id="masonry-section"
-      class="max-w-[1536px] mx-auto bg-darkbeige relative"
-    >
-      <div class="max-w-3xl ml-64 pt-28">
+    <section id="masonry-section" class="bg-darkbeige relative mx-auto max-w-[1536px]">
+      <div class="ml-64 max-w-3xl pt-28">
         <h3 class="text-md text-forestgreen">Realizacje</h3>
-        <h5 class="mt-5 mb-24 text-5xl font-monts font-medium">
-          Nasze <i class="font-inter">projekty</i>
+        <h5 class="font-monts mb-24 mt-5 text-5xl font-medium">
+          Nasze
+          <i class="font-inter">projekty</i>
         </h5>
       </div>
       <div
-        class="projects-masonry grid js-masonry mx-10 overflow-hidden transition-all duration-1000"
+        class="projects-masonry js-masonry mx-10 grid overflow-hidden transition-all duration-1000"
         data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 0}'
       >
         <div class="grid-item w-1/3 p-5">
           <img
             src="public/images/project_0.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
         <div class="grid-item w-1/3 p-5">
           <img
             src="public/images/project_1.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
         <div class="grid-item w-1/3 p-5">
           <img
             src="public/images/project_2.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
         <div class="grid-item w-1/3 p-5">
           <img
             src="public/images/project_3.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
         <div class="grid-item w-1/3 p-5">
           <img
             src="public/images/project_4.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
         <div class="grid-item w-1/3 p-5">
           <img
             src="public/images/project_5.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
         <div class="grid-item w-1/3 p-5">
           <img
             src="public/images/project_6.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
         <div class="grid-item w-1/3 p-5">
           <img
             src="public/images/project_7.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
         <div class="grid-item w-1/3 p-5">
           <img
             src="public/images/project_8.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
-        <div class="grid-item w-1/3 p-5 overflow-hidden">
+        <div class="grid-item w-1/3 overflow-hidden p-5">
           <img
             src="public/images/project_9.png"
             alt="project photo"
-            class="w-full h-auto rounded-sm hover:scale-105 transition-all cursor-pointer"
+            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
           />
         </div>
       </div>
-      <div class="h-40 pb-16 flex items-center justify-center">
+      <div class="flex h-40 items-center justify-center pb-16">
         <button
-          class="hide-projects flex pl-6 pr-4 pointer-events-auto items-center justify-center hover:to-transparent py-3 group bg-darkbeige bg-opacity-70 hover:-translate-y-3 hover:bg-white hover:bg-opacity-20 text-almostblack border-solid border-2 border-almostblack transition-all rounded-full duration-1000"
+          class="hide-projects bg-darkbeige text-almostblack border-almostblack group pointer-events-auto flex items-center justify-center rounded-full border-2 border-solid bg-opacity-70 py-3 pl-6 pr-4 transition-all duration-1000 hover:-translate-y-3 hover:bg-white hover:bg-opacity-20 hover:to-transparent"
         >
           Schowaj
           <svg
@@ -625,7 +653,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 rotate-180 transition-all"
+            class="h-6 w-6 rotate-180 transition-all"
           >
             <path
               stroke-linecap="round"
@@ -636,10 +664,10 @@
         </button>
       </div>
       <div
-        class="projects-overlay absolute bottom-0 left-0 mb-[840px] pointer-events-none h-[720px] w-full flex items-end justify-center bg-gradient-to-b from-transparent to-darkbeige duration-1000"
+        class="projects-overlay to-darkbeige pointer-events-none absolute bottom-0 left-0 mb-[840px] flex h-[720px] w-full items-end justify-center bg-gradient-to-b from-transparent duration-1000"
       >
         <button
-          class="expand-projects flex mb-24 pl-6 pr-4 pointer-events-auto items-center justify-center hover:to-transparent py-3 group bg-darkbeige bg-opacity-70 hover:translate-y-3 hover:bg-white hover:bg-opacity-20 text-almostblack border-solid border-2 border-almostblack transition-all rounded-full duration-1000"
+          class="expand-projects bg-darkbeige text-almostblack border-almostblack group pointer-events-auto mb-24 flex items-center justify-center rounded-full border-2 border-solid bg-opacity-70 py-3 pl-6 pr-4 transition-all duration-1000 hover:translate-y-3 hover:bg-white hover:bg-opacity-20 hover:to-transparent"
         >
           Rozwiń
           <svg
@@ -648,7 +676,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 transition-all"
+            class="h-6 w-6 transition-all"
           >
             <path
               stroke-linecap="round"
@@ -661,25 +689,22 @@
     </section>
     <!-- ==== CONTACT ==== -->
     <section
-      class="contact-section relative max-w-[1536px] w-full mx-auto mt-[-840px] duration-1000"
+      class="contact-section relative mx-auto mt-[-840px] w-full max-w-[1536px] duration-1000"
     >
-      <div
-        class="h-[560px] w-full flex justify-center items-center bg-lightbeige duration-1000"
-      >
-        <div
-          class="h-[400px] w-full mx-32 flex justify-center items-center bg-forestgreen"
-        >
-          <div class="w-full mx-36 flex items-center justify-between">
-            <h4 class="text-4xl text-white font-monts leading-[150%]">
-              Zostańmy w kontakcie! <br />
+      <div class="bg-lightbeige flex h-[560px] w-full items-center justify-center duration-1000">
+        <div class="bg-forestgreen mx-32 flex h-[400px] w-full items-center justify-center">
+          <div class="mx-36 flex w-full items-center justify-between">
+            <h4 class="font-monts text-4xl leading-[150%] text-white">
+              Zostańmy w kontakcie!
+              <br />
               Znajdziesz nas na
-              <i class="italic font-inter font-medium">Instagramie.</i>
+              <i class="font-inter font-medium italic">Instagramie.</i>
             </h4>
             <div class="w-[170px]">
               <p class="text-white">Śledź nasze najnowsze realizacje!</p>
               <a href="https://www.instagram.com/">
                 <button
-                  class="px-6 py-3 mt-6 bg-white text-forestgreen hover:drop-shadow-xl hover:bg-lightbeige rounded-full transition-all"
+                  class="text-forestgreen hover:bg-lightbeige mt-6 rounded-full bg-white px-6 py-3 transition-all hover:drop-shadow-xl"
                 >
                   Instagram
                 </button></a
@@ -690,43 +715,31 @@
       </div>
     </section>
     <!-- ==== FOOTER ====-->
-    <footer class="h-[420px] w-full bg-almostblack relative">
-      <div class="w-full h-full py-16 max-w-[1536px] mx-auto px-64">
+    <footer class="bg-almostblack relative h-[420px] w-full">
+      <div class="mx-auto h-full w-full max-w-[1536px] px-64 py-16">
         <div
-          class="w-full flex items-center justify-between pb-12 border-b-[1px] border-lightbeige border-solid"
+          class="border-lightbeige flex w-full items-center justify-between border-b-[1px] border-solid pb-12"
         >
           <div class="flex items-center">
-            <a href="#">
-              <img src="public\images\giarddesign_white.svg" alt="Logo Strony"
-            /></a>
+            <a href="#"> <img src="public\images\giarddesign_white.svg" alt="Logo Strony" /></a>
           </div>
           <div class="flex items-center gap-x-10">
-            <p class="text-lightbeige">
-              Daj znać, co możemy dla Ciebie zrobić!
-            </p>
+            <p class="text-lightbeige">Daj znać, co możemy dla Ciebie zrobić!</p>
             <button
-              class="px-6 py-4 bg-forestgreen hover:bg-gradient-to-t hover:from-forestgreen hover:to-green-800 font-light text-white hover:-translate-y-1 hover:drop-shadow-xl rounded-full transition-all"
+              class="bg-forestgreen hover:from-forestgreen rounded-full px-6 py-4 font-light text-white transition-all hover:-translate-y-1 hover:bg-gradient-to-t hover:to-green-800 hover:drop-shadow-xl"
             >
               Skontaktuj się z nami
             </button>
           </div>
         </div>
-        <div
-          class="flex items-center justify-between mt-12 text-lightbeige text-sm"
-        >
+        <div class="text-lightbeige mt-12 flex items-center justify-between text-sm">
           <div class="flex gap-x-12">
-            <a class="hover-underline transition-all pb-1" href="#">Kontakt</a
-            ><a
-              class="hover-underline transition-all pb-1"
-              href="https://www.instagram.com/"
+            <a class="hover-underline pb-1 transition-all" href="#">Kontakt</a
+            ><a class="hover-underline pb-1 transition-all" href="https://www.instagram.com/"
               >Instagram</a
-            ><a
-              class="hover-underline transition-all pb-1"
-              href="https://www.facebook.com/"
+            ><a class="hover-underline pb-1 transition-all" href="https://www.facebook.com/"
               >Facebook</a
-            ><a
-              class="hover-underline transition-all pb-1"
-              href="https://www.linkedin.com/"
+            ><a class="hover-underline pb-1 transition-all" href="https://www.linkedin.com/"
               >LinkedIn</a
             >
           </div>
@@ -735,17 +748,12 @@
             ><a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
           </div>
         </div>
-        <div
-          class="flex items-center mt-24 justify-between text-lightbeige text-sm"
-        >
+        <div class="text-lightbeige mt-24 flex items-center justify-between text-sm">
           <p>Prawa zastrzeżone &#169; 2022</p>
-          <div class="flex gap-x-4 items-center">
+          <div class="flex items-center gap-x-4">
             <p class="inline">made by</p>
             <a href="https://adrespect.pl/"
-              ><img
-                class="inline"
-                src="/public/images/adrespect.svg"
-                alt="adrespect logo"
+              ><img class="inline" src="/public/images/adrespect.svg" alt="adrespect logo"
             /></a>
           </div>
         </div>
@@ -759,32 +767,32 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript">
-      var slideIndex = 0;
-      showDivs(slideIndex);
+      var slideIndex = 0
+      showDivs(slideIndex)
 
       function plusDivs(n) {
-        showDivs((slideIndex += n));
+        showDivs((slideIndex += n))
       }
 
       function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName('slides');
+        var i
+        var x = document.getElementsByClassName('slides')
         if (x.length <= n) {
-          slideIndex = 0;
+          slideIndex = 0
         }
         if (n < 0) {
-          slideIndex = x.length - 1;
+          slideIndex = x.length - 1
         }
         for (i = 0; i < x.length; i++) {
           if (i < slideIndex) {
-            x[i].classList.remove('slide-in', 'slide-right');
-            x[i].classList.add('slide-left', 'invisible');
+            x[i].classList.remove('slide-in', 'slide-right')
+            x[i].classList.add('slide-left', 'invisible')
           } else if (i > slideIndex) {
-            x[i].classList.remove('slide-in', 'slide-left');
-            x[i].classList.add('slide-right', 'invisible');
+            x[i].classList.remove('slide-in', 'slide-left')
+            x[i].classList.add('slide-right', 'invisible')
           } else {
-            x[i].classList.remove('slide-right', 'slide-left', 'invisible');
-            x[i].classList.add('slide-in');
+            x[i].classList.remove('slide-right', 'slide-left', 'invisible')
+            x[i].classList.add('slide-in')
           }
         }
       }
@@ -792,43 +800,67 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $('.search').click(function () {
-          $('.search').toggleClass('active');
-          $('.offer').removeClass('active');
-          $('.dropdown-icon').removeClass('active');
-        });
-      });
+          $('.search').toggleClass('active')
+          $('.search-input').toggleClass('scale-0')
+          $('.offer').removeClass('active')
+          $('.dropdown-icon').removeClass('active')
+        })
+      })
       $(document).ready(function () {
         $('.close-search').click(function () {
-          $('.search').toggleClass('active');
-        });
-      });
+          $('.search').toggleClass('active')
+          $('.search-input').toggleClass('scale-0')
+        })
+      })
       $(document).ready(function () {
         $('.offer').click(function () {
-          $('.offer').toggleClass('active');
-          $('.dropdown-icon').toggleClass('active');
-          $('.search').removeClass('active');
-        });
-      });
+          $('.offer').toggleClass('active')
+          $('.dropdown-icon').toggleClass('active')
+          $('.search').removeClass('active')
+          $('.search-input').removeeClass('scale-0')
+        })
+      })
     </script>
     <script type="text/javascript">
       $(document).ready(function () {
         $('.expand-projects').hover(function () {
-          $('.projects-overlay').toggleClass('opacity-50');
-        });
+          $('.projects-overlay').toggleClass('opacity-50')
+        })
         $('.expand-projects').click(function () {
-          $('.projects-overlay').toggleClass('opacity-0 mb-[840px]');
-          $('.expand-projects').toggleClass('hidden');
-          $('.contact-section').toggleClass('mt-[-840px]');
-        });
+          $('.projects-overlay').toggleClass('opacity-0 mb-[840px]')
+          $('.expand-projects').toggleClass('hidden')
+          $('.contact-section').toggleClass('mt-[-840px]')
+        })
         $('.hide-projects').hover(function () {
-          $('.projects-overlay').toggleClass('opacity-100');
-        });
+          $('.projects-overlay').toggleClass('opacity-100')
+        })
         $('.hide-projects').click(function () {
-          $('.projects-overlay').toggleClass('opacity-0 mb-[840px]');
-          $('.expand-projects').toggleClass('hidden');
-          $('.contact-section').toggleClass('mt-[-840px]');
-        });
-      });
+          $('.projects-overlay').toggleClass('opacity-0 mb-[840px]')
+          $('.expand-projects').toggleClass('hidden')
+          $('.contact-section').toggleClass('mt-[-840px]')
+        })
+      })
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.offer-section').removeClass('opacity-0 translate-y-[100%]')
+        $('.about-section').removeClass('translate-x-[-100%]')
+        $('.navbar').removeClass('opacity-0')
+      })
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.open-menu').click(function () {
+          $('.open-menu').toggleClass('hidden')
+          $('.close-menu').toggleClass('hidden')
+          $('.mobile-menu').toggleClass('hidden')
+        })
+        $('.close-menu').click(function () {
+          $('.open-menu').toggleClass('hidden')
+          $('.close-menu').toggleClass('hidden')
+          $('.mobile-menu').toggleClass('hidden')
+        })
+      })
     </script>
   </body>
 </html>
