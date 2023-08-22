@@ -379,7 +379,7 @@
     </section>
     <!-- ==== OFFER SECTION ==== -->
     <section
-      class="offer-section bg-lightbeige relative mx-auto mt-[648px] max-w-[1536px] translate-y-[100%] pb-32 opacity-0 delay-500 duration-1000 md:mt-[815px] lg:mt-[819px]"
+      class="offer-section bg-lightbeige relative mx-auto mt-[648px] max-w-[1536px] translate-y-[100%] pb-20 md:pb-32 opacity-0 delay-500 duration-1000 md:mt-[815px] lg:mt-[819px]"
     >
       <!-- ==== SLIDER NAV ====-->
       <div
@@ -535,16 +535,19 @@
     <section class="about-section relative z-[1] translate-x-[-100%] delay-[2000ms] duration-1000">
       <div>
         <div class="flex">
-          <div class="slide-1 bg-gradient-to-lb flex h-[720px] w-full">
+          <div class="slide-1 flex h-[720px] w-full">
             <div
-              class="h-full w-1/2 bg-[url('/public/images/third_section_garden.png')] bg-cover bg-no-repeat"
+              class="hidden h-full w-1/2 bg-[url('/public/images/third_section_garden.png')] bg-cover bg-no-repeat sm:block"
             ></div>
             <div
-              class="bg-forestgreen text-lightbeige flex h-full w-1/2 max-w-[768px] flex-col justify-center pl-40 pr-32"
+              class="sm:bg-forestgreen text-lightbeige bg-[url('public/images/third_section_garden.png')] sm:bg-none flex h-full sm:w-1/2 max-w-[768px] flex-col justify-center"
             >
+            <div
+            class="bg-forestgreen flex h-full flex-col justify-center bg-opacity-[0.9]  px-6 sm:px-12 md:px-16 lg:px-24 xl:pl-40 xl:pr-32"
+          >
               <h3 class="text-md">O firmie</h3>
-              <h5 class="font-monts mt-5 text-5xl font-medium leading-[120%]">
-                Tworzymy<br />
+              <h5 class="font-monts mt-5 text-4xl lg:text-5xl font-medium leading-[120%]">
+                Tworzymy<br class="hidden md:inline" />
                 z pasją
               </h5>
               <p class="text-md mt-10">
@@ -555,7 +558,7 @@
                 małoobsługowe, dostosowane do współczesnego trybu życia.
               </p>
               <button
-                class="hover:bg-lightbeige text-lightbeige border-lightbeige hover:group mt-16 flex w-64 items-center justify-center gap-x-2 rounded-full border-2 border-solid bg-transparent py-3 transition-all hover:rotate-3 hover:bg-opacity-10 hover:pl-5 hover:pr-1 hover:drop-shadow-xl"
+                class="hover:bg-lightbeige text-lightbeige border-lightbeige hover:group mt-8 md:mt-10 lg:mt-16 flex w-64 items-center justify-center gap-x-2 rounded-full border-2 border-solid bg-transparent py-3 transition-all hover:rotate-3 hover:bg-opacity-10 hover:pl-5 hover:pr-1 hover:drop-shadow-xl"
               >
                 Poznaj nas bliżej
                 <svg
@@ -573,6 +576,7 @@
                   />
                 </svg>
               </button>
+              </div>
             </div>
           </div>
         </div>
