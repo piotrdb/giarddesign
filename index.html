@@ -615,8 +615,8 @@
         </h5>
       </div>
       <div
+        id="projects-masonry"
         class="projects-masonry js-masonry mx-5 grid overflow-hidden transition-all duration-1000 md:mx-10"
-        data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 0}'
       >
         <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
           <img
@@ -746,7 +746,7 @@
     </section>
     <!-- ==== IMAGE GALLERY ==== -->
     <div
-      class="gallery-overlay bg-almostblack fixed left-0 top-0 z-50 flex h-full w-full items-center justify-center bg-opacity-70"
+      class="gallery-overlay bg-almostblack fixed left-0 top-0 z-50 hidden h-full w-full items-center justify-center bg-opacity-70"
     >
       <button
         class="bg-almostblack absolute right-5 top-5 flex aspect-square items-center justify-center rounded-lg p-2 text-2xl text-white hover:bg-zinc-800 sm:p-3 sm:text-3xl lg:p-4 lg:text-4xl"
@@ -911,13 +911,23 @@
         </div>
       </div>
     </footer>
-    <script src="/masonry/masonry.pkgd.min.js"></script>
-    <script></script>
+    <script src="/images_loaded/imagesloaded.pkgd.js"></script>
+    <script src="/masonry/masonry.pkgd.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.0.js"
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
       crossorigin="anonymous"
     ></script>
+    <script>
+      var $grid = $('.masonry-projects').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: 200
+    });
+      // layout Masonry after each image loads
+      $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
+  });
+    </script>
     <script>
       let imageIndex = 1
       showImages(imageIndex)
