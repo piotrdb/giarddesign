@@ -915,155 +915,17 @@
         </div>
       </div>
     </footer>
-    <script src="/images_loaded/imagesloaded.pkgd.min.js"></script>
-    <script src="/masonry/masonry.pkgd.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.0.js"
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
       crossorigin="anonymous"
     ></script>
-    <!-- <script>
-      var container = document.querySelector('.js-masonry')
-      var msnry = new Masonry(container, {
-        columnWidth: 200,
-        itemSelector: '.item',
-      })
-      msnry.imagesLoaded()(function () {
-        msnry.masonry()
-      })
-      imagesLoaded(document.querySelector('.js-masonry'), function (instance) {
-        console.log('all images are loaded')
-      })
-    </script> -->
-    <script>
-      let imageIndex = 1
-      showImages(imageIndex)
-      function plusImages(n) {
-        showImages((imageIndex += n))
-      }
-      function currentImage(n) {
-        showImages((imageIndex = n))
-        $('.gallery-overlay').toggleClass('hidden flex')
-      }
-      function closeGallery() {
-        $('.gallery-overlay').toggleClass('hidden flex')
-      }
-      function showImages(n) {
-        let i
-        let images = document.getElementsByClassName('gallery-image')
-        if (n > images.length) {
-          imageIndex = 1
-        }
-        if (n < 1) {
-          imageIndex = images.length
-        }
-        for (i = 0; i < images.length; i++) {
-          images[i].style.display = 'none'
-        }
-        images[imageIndex - 1].style.display = 'block'
-      }
-    </script>
-    <script type="text/javascript">
-      let slideIndex = 0
-      showDivs(slideIndex)
-
-      function plusDivs(n) {
-        showDivs((slideIndex += n))
-      }
-
-      function showDivs(n) {
-        var i
-        var x = document.getElementsByClassName('slides')
-        if (x.length <= n) {
-          slideIndex = 0
-        }
-        if (n < 0) {
-          slideIndex = x.length - 1
-        }
-        for (i = 0; i < x.length; i++) {
-          if (i < slideIndex) {
-            x[i].classList.remove('slide-in', 'slide-right')
-            x[i].classList.add('slide-left', 'invisible')
-          } else if (i > slideIndex) {
-            x[i].classList.remove('slide-in', 'slide-left')
-            x[i].classList.add('slide-right', 'invisible')
-          } else {
-            x[i].classList.remove('slide-right', 'slide-left', 'invisible')
-            x[i].classList.add('slide-in')
-          }
-        }
-      }
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('.search').click(function () {
-          $('.search').toggleClass('active')
-          $('.search-input').toggleClass('scale-0')
-          $('.offer').removeClass('active')
-          $('.dropdown-icon').removeClass('active')
-        })
-      })
-      $(document).ready(function () {
-        $('.close-search').click(function () {
-          $('.search').toggleClass('active')
-          $('.search-input').toggleClass('scale-0')
-        })
-      })
-      $(document).ready(function () {
-        $('.offer').click(function () {
-          $('.offer').toggleClass('active')
-          $('.dropdown-icon').toggleClass('active')
-          $('.search').removeClass('active')
-          $('.search-input').removeClass('scale-0')
-        })
-      })
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('.expand-projects').hover(function () {
-          $('.projects-overlay').toggleClass('opacity-50')
-        })
-        $('.expand-projects').click(function () {
-          $('.projects-overlay').toggleClass('opacity-0 mb-[400px]')
-          $('.projects-overlay').toggleClass('sm:mb-[840px]')
-          $('.expand-projects').toggleClass('hidden')
-          $('.hide-projects').toggleClass('hidden flex')
-          $('.contact-section').toggleClass('mt-[-400px]')
-          $('.contact-section').toggleClass('sm:mt-[-840px]')
-        })
-        $('.hide-projects').hover(function () {
-          $('.projects-overlay').toggleClass('opacity-100')
-        })
-        $('.hide-projects').click(function () {
-          $('.projects-overlay').toggleClass('opacity-0 mb-[400px]')
-          $('.projects-overlay').toggleClass('sm:mb-[840px]')
-          $('.expand-projects').toggleClass('hidden')
-          $('.hide-projects').toggleClass('hidden flex')
-          $('.contact-section').toggleClass('mt-[-400px]')
-          $('.contact-section').toggleClass('sm:mt-[-840px]')
-        })
-      })
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('.offer-section').removeClass('opacity-0 translate-y-[100%]')
-        $('.about-section').removeClass('translate-x-[-100%]')
-        $('.navbar').removeClass('opacity-0')
-      })
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('.open-menu').click(function () {
-          $('.open-menu').toggleClass('hidden')
-          $('.close-menu').toggleClass('hidden')
-          $('.mobile-menu').toggleClass('hidden')
-        })
-        $('.close-menu').click(function () {
-          $('.open-menu').toggleClass('hidden')
-          $('.close-menu').toggleClass('hidden')
-          $('.mobile-menu').toggleClass('hidden')
-        })
-      })
-    </script>
+    <script src="/masonry/masonry.pkgd.min.js"></script>
+    <script src="/images_loaded/imagesloaded.pkgd.min.js"></script>
+    <script src="/scripts/entry.js"></script>
+    <script src="/scripts/nav.js"></script>
+    <script src="/scripts/slider.js"></script>
+    <script src="/scripts/masonry.js"></script>
+    <script src="/scripts/gallery.js"></script>
   </body>
 </html>
