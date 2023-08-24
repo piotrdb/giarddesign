@@ -17,7 +17,7 @@ jQuery(function () {
     $('.offer').toggleClass('active')
     $('.dropdown-icon').toggleClass('active')
     $('.search').removeClass('active')
-    $('.search-input').removeClass('scale-0')
+    $('.search-input').addClass('scale-0')
   })
 })
 

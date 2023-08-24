@@ -21,6 +21,7 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "imagesloaded": "^5.0.0",
     "masonry-layout": "^4.2.2"
   }
 }

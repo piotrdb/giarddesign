@@ -555,7 +555,10 @@
       </div>
     </section>
     <!-- ==== ABOUT SECTION ==== -->
-    <section class="about-section relative z-[1] translate-x-[-100%] delay-[2000ms] duration-1000">
+    <section
+      id="about-section"
+      class="about-section relative z-[1] translate-x-[-100%] delay-[2000ms] duration-1000"
+    >
       <div>
         <div class="flex">
           <div class="slide-1 flex h-[720px] w-full">
@@ -619,86 +622,105 @@
       </div>
       <div
         id="projects-masonry"
-        class="projects-masonry js-masonry mx-5 grid overflow-hidden transition-all duration-1000 md:mx-10"
+        class="projects-masonry mx-5 grid overflow-hidden transition-all duration-1000 md:mx-10"
       >
-        <div class="grid-sizer w-1/2 lg:w-1/3"></div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_0.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(1)"
           />
         </div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_1.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(2)"
           />
         </div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_2.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(3)"
           />
         </div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_3.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(4)"
           />
         </div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_4.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(5)"
           />
         </div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_5.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(6)"
           />
         </div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_6.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(7)"
           />
         </div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_7.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(8)"
           />
         </div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_8.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(9)"
           />
         </div>
-        <div class="grid-item w-1/2 p-1 sm:p-2 md:p-4 lg:w-1/3 lg:p-5">
+        <div
+          class="grid-item cursor-pointer overflow-hidden p-2 transition-all hover:scale-105 sm:p-3 md:p-4"
+        >
           <img
             src="public/images/project_9.png"
             alt="project photo"
-            class="h-auto w-full cursor-pointer rounded-sm transition-all hover:scale-105"
+            class="h-auto w-full"
             onClick="currentImage(10)"
           />
         </div>
@@ -920,8 +942,7 @@
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
       crossorigin="anonymous"
     ></script>
-    <script src="/masonry/masonry.pkgd.min.js"></script>
-    <script src="/images_loaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script src="/scripts/entry.js"></script>
     <script src="/scripts/nav.js"></script>
     <script src="/scripts/slider.js"></script>
